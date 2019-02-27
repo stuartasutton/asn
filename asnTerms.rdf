@@ -65,6 +65,16 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifer"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
     </rdf:Property>
+    <!--   Definition of assessmentRubric   -->
+    <!--   Added February 26, 2019   -->
+    <rdfs:Property rdf:about="http://purl.org/ASN/schema/core/assessmentRubric">
+        <rdfs:label xml:lang="en-US">Assessment Rubric</rdfs:label>
+        <rdfs:comment xml:lang="en-US">Explicit set of criteria used for assessing an articulated competency or set of competencies.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/StandardDocument"/>
+        <rdfs:range rdf:resource="http://purl.org/ASN/schema/core/Rubric"/>
+        <rdfs:range rdf:resource="http://purl.org/ASN/schema/core/RubricCriterion"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
+    </rdfs:Property>
     <!--   Definition of authorityStatus   -->
     <!--   Modified November 14, 2007   -->
     <rdf:Property rdf:about="http://purl.org/ASN/schema/core/authorityStatus">
