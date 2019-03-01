@@ -27,7 +27,7 @@
         "asn:comprisedOf": {"@type": "@id"},
         "asn:conceptKeyword": {"@container": "@language"},
         "asn:conceptTerm": {"@type": "@id"},
-        "asn:criterionCategoryOf": {"@type": "@id"},
+        "asn:criterionCategoryFor": {"@type": "@id"},
         "asn:criterionFor": {"@type": "@id"},
         "asn:crossSubjectReference": {"@type": "@id"},
         "asn:derivedFrom": {"@type": "@id"},
