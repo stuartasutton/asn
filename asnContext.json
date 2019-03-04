@@ -35,7 +35,7 @@
         "asn:exactAlignment": {"@type": "@id"},
         "asn:exactCorrelation": {"@type": "@id"},
         "asn:exportVersion": {"@type": "@id"},
-        "gemq:hasChild": {"@id": "asn:hasChild", "@container": "@list", "@type":"@id"},
+        "gemq:hasChild": {"@id": "gemq:hasChild", "@container": "@list", "@type":"@id"},
         "asn:hasCriterion": {"@type": "@id"},
         "asn:hasCriterionCategory": {"@type": "@id"},
         "asn:hasLevel": {"@type": "@id"},
