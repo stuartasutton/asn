@@ -1,6 +1,8 @@
 @prefix asn: <http://purl.org/ASN/schema/core/> .
+@prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
@@ -77,6 +79,12 @@
   rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> ;
   dc:description "Proficiency scales define levels of performance (what a person does) as distinct from knowledge of specific information (what a person knows) and outline tasks a person can manage and the skills necessary to progressively accomplish explicit competencies at increasing levels of complexity. Proficiency scales: (1) assist in making judgments about the kinds of tasks related to a competency that a person is able to perform; and (2) to compare the abilities of different persons with regard to achievement of those competencies at different levels."@en-US .
   
+<http://purl.org/ASN/schema/core/RightsAndAttribution>
+  a rdfs:Class ;
+  rdfs:label "Rights and Attribution"@en-US ;
+  rdfs:comment "Resource providing information about the rights and attribution requirements of the entity making the metadata description available. These rights are distinct from any rights held in the content of the competency framework or compentencies described. "@en-US ;
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> . 
+  
 <http://purl.org/ASN/schema/core/Rubric>
   a rdfs:Class ;
   rdfs:label "Rubric"@en-US ;
@@ -151,6 +159,22 @@
   rdfs:domain asn:StandardDocument ;
   rdfs:range asn:Rubric, asn:RubricCriterion ;
   rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
+  
+<http://creativecommons.org/ns#attributionName>
+  a rdfs:Property ;
+  rdfs:label "Attribution Name"@en-US ;
+  rdfs:comment "The name the creator of a Work would like used when attributing re-use. In this profile, the attribution name is of the name of the owner, publisher or egistry to which attribution is owed."@en-US ;
+  rdfs:domain asn:RightsAndAttribution ;
+  rdfs:range rdfs:Literal ;
+  rdfs:isDefinedBy <http://creativecommons.org/ns#> .
+  
+<http://creativecommons.org/ns#attributionURL>
+  a rdfs:Property ;
+  rdfs:label "Attribution URL"@en-US ;
+  rdfs:comment "The URL the creator of a Work would like used when attributing re-use.In this profile, the attribution URL is of the URL the owner, publisher or egistry to which attribution is owed would like used."@en-US ;
+  rdfs:domain asn:RightsAndAttribution ;
+  rdfs:range rdfs:Literal ;
+  rdfs:isDefinedBy <http://creativecommons.org/ns#> .
   
 <http://id.loc.gov/vocabulary/relators/aut>
   a rdf:Property ;
@@ -482,6 +506,66 @@
   rdfs:subPropertyOf dct:subject ;
   rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
   
+<http://purl.org/ASN/schema/core/majorAlignment>
+  a rdf:Property ;
+  rdfs:label "Major Alignment" ;
+  rdfs:comment "Major overlap of relevant concepts between the two competencies." ;
+  rdfs:domain asn:Statement ;
+  rdfs:range asn:Statement ;
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
+  
+<http://purl.org/ASN/schema/core/majorCorrelation>
+  a rdf:Property ;
+  rdfs:label "Major Correlation" ;
+  rdfs:comment "Major overlap of relevant concepts between the learning resource being described and the competency statement." ;
+  rdfs:subPropertyOf dct:conformsTo ;
+  rdfs:domain asn:LearningResource ;
+  rdfs:range asn:Statement ;
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
+
+<http://purl.org/ASN/schema/core/minorAlignment>
+  a rdf:Property ;
+  rdfs:label "Minor Alignment" ;
+  rdfs:comment "Minor overlap of relevant concepts between the two competencies." ;
+  rdfs:domain asn:Statement ;
+  rdfs:range asn:Statement ;
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
+  
+<http://purl.org/ASN/schema/core/minorCorrelation>
+  a rdf:Property ;
+  rdfs:label "Minor Correlation" ;
+  rdfs:comment "Minor overlap of relevant concepts between the learning resource being described and the competency statement." ;
+  rdfs:subPropertyOf dct:conformsTo ;
+  rdfs:domain asn:LearningResource ;
+  rdfs:range asn:Statement ;
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
+  
+<http://purl.org/ASN/schema/core/modified>
+  a rdf:Property ;
+  rdfs:label "Date Modified" ;
+  rdfs:comment "Date on which the resource was changed." ;
+  rdfs:subPropertyOf dct:date ;
+  rdfs:domain asn:LearningResource, asn:RightsAndAttribution ;
+  rdfs:range dct:W3CDTF ;
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
+
+<http://purl.org/ASN/schema/core/narrowAlignment>
+  a rdf:Property ;
+  rdfs:label "Narrow Alignment" ;
+  rdfs:comment "The competency being described covers all of the relevant concepts in the target competency as well as relevant concepts not found in the target competency." ;
+  rdfs:domain asn:Statement ;
+  rdfs:range asn:Statement ;
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
+  
+<http://purl.org/ASN/schema/core/narrowCorrelation>
+  a rdf:Property ;
+  rdfs:label "Narrow Correlation" ;
+  rdfs:comment "The learning resource being described covers all of the relevant concepts in the competency statement as well as relevant concepts not found in the competency." ;
+  rdfs:subPropertyOf dct:conformsTo ;
+  rdfs:domain asn:LearningResource ;
+  rdfs:range asn:Statement ;
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> ,
+  
 <http://www.w3.org/2004/02/skos/core#note>
   a rdf:Property ;
   rdfs:label "Note" ;
@@ -489,6 +573,31 @@
   rdfs:domain asn:Statement, asn:StandardDocument ;
   rdfs:range rdfs:Literal ;
   rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#> .
+  
+<http://purl.org/ASN/schema/core/prerequisiteAlignment>
+  a rdf:Property ;
+  rdfs:label "Prerequisite Alignment" ;
+  rdfs:comment "The competency being described is a prerequisite to the target competency." ;
+  rdfs:domain asn:Statement ;
+  rdfs:range asn:Statement ;
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
+  
+<http://purl.org/ASN/schema/core/prerequisiteCompetency>
+  a rdf:Property ;
+  rdfs:label "Prerequisite Competency" ;
+  rdfs:comment "A prerequisite competency for the learning resource being described." ;
+  rdfs:domain asn:LearningResource ;
+  rdfs:range asn:Statement ;
+  rdfs:subPropertyOf dct:conformsTo ;
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
+
+<http://xmlns.com/foaf/0.1/primaryTopic>
+  a rdf:Property ;
+  rdfs:label "Primary Topic" ;
+  rdfs:comment "The primaryTopic property relates a document to the main thing that the document is about. In this profile, the domain of this property is an rdf description of the rights in the framework's metadata description and provides for the expected attribution."@en ;
+  schema:domainIncludes xsd:anyURI ;
+  rdfs:range asn:StandardDocument ;
+  rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> .
 
 <http://purl.org/ASN/schema/core/proficiencyLevel>
   a rdf:Property ;
@@ -524,83 +633,6 @@
   rdfs:range skos:Concept ;
   rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
   
-<http://purl.org/ASN/schema/core/teachesCompetency>
-  a rdf:Property ;
-  rdfs:label "Teaches Competency" ;
-  rdfs:comment "The competency that the learning resource being described teaches." ;
-  rdfs:domain asn:LearningResource ;
-  rdfs:range asn:Statement ;
-  rdfs:subPropertyOf dct:conformsTo ;
-  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
-  
-<http://purl.org/ASN/schema/core/majorAlignment>
-  a rdf:Property ;
-  rdfs:label "Major Alignment" ;
-  rdfs:comment "Major overlap of relevant concepts between the two competencies." ;
-  rdfs:domain asn:Statement ;
-  rdfs:range asn:Statement ;
-  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
-  
-<http://purl.org/ASN/schema/core/majorCorrelation>
-  a rdf:Property ;
-  rdfs:label "Major Correlation" ;
-  rdfs:comment "Major overlap of relevant concepts between the learning resource being described and the competency statement." ;
-  rdfs:subPropertyOf dct:conformsTo ;
-  rdfs:domain asn:LearningResource ;
-  rdfs:range asn:Statement ;
-  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
-
-<http://purl.org/ASN/schema/core/minorAlignment>
-  a rdf:Property ;
-  rdfs:label "Minor Alignment" ;
-  rdfs:comment "Minor overlap of relevant concepts between the two competencies." ;
-  rdfs:domain asn:Statement ;
-  rdfs:range asn:Statement ;
-  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
-  
-<http://purl.org/ASN/schema/core/minorCorrelation>
-  a rdf:Property ;
-  rdfs:label "Minor Correlation" ;
-  rdfs:comment "Minor overlap of relevant concepts between the learning resource being described and the competency statement." ;
-  rdfs:subPropertyOf dct:conformsTo ;
-  rdfs:domain asn:LearningResource ;
-  rdfs:range asn:Statement ;
-  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
-
-<http://purl.org/ASN/schema/core/narrowAlignment>
-  a rdf:Property ;
-  rdfs:label "Narrow Alignment" ;
-  rdfs:comment "The competency being described covers all of the relevant concepts in the target competency as well as relevant concepts not found in the target competency." ;
-  rdfs:domain asn:Statement ;
-  rdfs:range asn:Statement ;
-  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
-  
-<http://purl.org/ASN/schema/core/narrowCorrelation>
-  a rdf:Property ;
-  rdfs:label "Narrow Correlation" ;
-  rdfs:comment "The learning resource being described covers all of the relevant concepts in the competency statement as well as relevant concepts not found in the competency." ;
-  rdfs:subPropertyOf dct:conformsTo ;
-  rdfs:domain asn:LearningResource ;
-  rdfs:range asn:Statement ;
-  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
-  
-<http://purl.org/ASN/schema/core/prerequisiteAlignment>
-  a rdf:Property ;
-  rdfs:label "Prerequisite Alignment" ;
-  rdfs:comment "The competency being described is a prerequisite to the target competency." ;
-  rdfs:domain asn:Statement ;
-  rdfs:range asn:Statement ;
-  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
-  
-<http://purl.org/ASN/schema/core/prerequisiteCompetency>
-  a rdf:Property ;
-  rdfs:label "Prerequisite Competency" ;
-  rdfs:comment "A prerequisite competency for the learning resource being described." ;
-  rdfs:domain asn:LearningResource ;
-  rdfs:range asn:Statement ;
-  rdfs:subPropertyOf dct:conformsTo ;
-  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
-
 <http://purl.org/ASN/schema/core/repositoryDate>
   a rdf:Property ;
   rdfs:label "Repository Date" ;
@@ -615,7 +647,7 @@
   rdfs:label "Rights" ;
   rdfs:comment "Information about rights held in and over the resource." ;
   dc:description "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided."@en-US ;
-  rdfs:domain asn:StandardDocument ;
+  rdfs:domain asn:StandardDocument, asn:RightsAndAttribution ;
   rdfs:range rdfs:Literal ;
   rdfs:isDefinedBy <http://purl.org/dc/terms/> .
   
@@ -624,7 +656,7 @@
   rdfs:label "Rights Holder" ;
   rdfs:comment "A person or organization owning or managing rights over the resource." ;
   dc:description "Recommended practice is to refer to the rights holder with a URI. If this is not possible or feasible, a literal value that identifies the rights holder may be provided."@en-US ;
-  rdfs:domain asn:StandardDocument, asn:Statement ;
+  rdfs:domain asn:StandardDocument, asn:Statement, asn:RightsAndAttribution ;
   rdfs:range dct:Agent ;
   rdfs:isDefinedBy <http://purl.org/dc/terms/> .
   
@@ -704,6 +736,15 @@
   rdfs:range xsd:anyURI ;
   skos:note rdfs:Literal ;
   rdfs:isDefinedBy <http://purl.org/dc/terms/> .
+  
+<http://purl.org/ASN/schema/core/teachesCompetency>
+  a rdf:Property ;
+  rdfs:label "Teaches Competency" ;
+  rdfs:comment "The competency that the learning resource being described teaches." ;
+  rdfs:domain asn:LearningResource ;
+  rdfs:range asn:Statement ;
+  rdfs:subPropertyOf dct:conformsTo ;
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
   
 <http://purl.org/dc/terms/temporal>
   a rdf:Property ;
