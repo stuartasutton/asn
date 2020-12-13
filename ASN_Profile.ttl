@@ -82,7 +82,7 @@
 <http://purl.org/ASN/schema/core/RightsAndAttribution>
   a rdfs:Class ;
   rdfs:label "Rights and Attribution"@en-US ;
-  rdfs:comment "Resource providing information about the rights and attribution requirements of the entity making the metadata description available. These rights are distinct from any rights held in the content of the competency framework or compentencies described. "@en-US ;
+  rdfs:comment "Resource providing information about the rights and attribution requirements of the entity making the metadata description available. These rights are distinct from any rights held in the content of the competency framework or competencies described. "@en-US ;
   rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> . 
   
 <http://purl.org/ASN/schema/core/Rubric>
