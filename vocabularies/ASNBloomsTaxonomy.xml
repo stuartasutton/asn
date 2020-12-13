@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+  <skos:ConceptScheme rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/">
+    <dc:title xml:lang="en-US">Bloom's Taxonomy</dc:title>
+    <dc:description xml:lang="en-US">Cognitive, affective, and psychomotor vocabulary.</dc:description>
+    <dcterms:created rdf:datatype="http://purl.org/dc/terms/W3CDTF">2008-11-11</dcterms:created>
+    <dcterms:modified rdf:datatype="http://purl.org/dc/terms/W3CDTF">2015-01-07</dcterms:modified>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/cognitive" />
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/affective" />
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/psychomotor" />
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/cognitive">
+    <skos:prefLabel xml:lang="en-US">Cognitive</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/knowledge" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/comprehension" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/application" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/analysis" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/synthesis" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/evaluation" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/knowledge">
+    <skos:prefLabel xml:lang="en-US">Knowledge</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/cognitive" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/comprehension">
+    <skos:prefLabel xml:lang="en-US">Comprehension</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/cognitive" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/application">
+    <skos:prefLabel xml:lang="en-US">Application</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/cognitive" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/analysis">
+    <skos:prefLabel xml:lang="en-US">Analysis</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/cognitive" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/synthesis">
+    <skos:prefLabel xml:lang="en-US">Synthesis</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/cognitive" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/evaluation">
+    <skos:prefLabel xml:lang="en-US">Evaluation</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/cognitive" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/affective">
+    <skos:prefLabel xml:lang="en-US">Affective</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/receiving" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/responding" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/valuing" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/organizing" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/characterizing" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/receiving">
+    <skos:prefLabel xml:lang="en-US">Receiving</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/affective" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/responding">
+    <skos:prefLabel xml:lang="en-US">Responding</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/affective" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/valuing">
+    <skos:prefLabel xml:lang="en-US">Valuing</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/affective" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/organizing">
+    <skos:prefLabel xml:lang="en-US">Organizing</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/affective" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/characterizing">
+    <skos:prefLabel xml:lang="en-US">Characterizing</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/affective" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/psychomotor">
+    <skos:prefLabel xml:lang="en-US">Psychomotor</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/perception" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/set" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/guided-response" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/mechanism" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/complex-overt-response" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/adaptation" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/origination" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/perception">
+    <skos:prefLabel xml:lang="en-US">Perception</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/psychomotor" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/set">
+    <skos:prefLabel xml:lang="en-US">Set</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/psychomotor" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/guided-response">
+    <skos:prefLabel xml:lang="en-US">Guided Response</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/psychomotor" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/mechanism">
+    <skos:prefLabel xml:lang="en-US">Mechanism</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/psychomotor" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/complex-overt-response">
+    <skos:prefLabel xml:lang="en-US">Complex Overt Response</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/psychomotor" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/adaptation">
+    <skos:prefLabel xml:lang="en-US">Adaptation</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/psychomotor" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/origination">
+    <skos:prefLabel xml:lang="en-US">Origination</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/psychomotor" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNBloomsTaxonomy/" />
+  </skos:Concept>
+</rdf:RDF>

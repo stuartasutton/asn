@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <!-- SKOS for NYS-SS-Themes-->
+  <skos:ConceptScheme rdf:about="http://purl.org/ASN/scheme/NYS-SS-Theme/">
+    <dc:title xml:lang="en-US">NYS Social Studies Framework Themes</dc:title>
+    <dc:description xml:lang="en-US">A vocabulary of the ten unifying Social Studies themes representing the different lenses that can be applied to the teaching and learning of the Key Ideas and Conceptual Understandings within the NYS Framework across all grades, K-12.</dc:description>
+    <dc:creator xml:lang="en-US">D2L Ltd.</dc:creator>
+    <dcterms:created rdf:datatype="http://purl.org/dc/terms/W3CDTF">2014-07-28</dcterms:created>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/1" />
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/2" />
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/3" />
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/4" />
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/5" />
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/6" />
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/7" />
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/8" />
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/9" />
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/10" />
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/NYS-SS-Theme/1">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+    <skos:prefLabel xml:lang="en-US">Individual Development and Cultural Identity</skos:prefLabel>
+    <skos:notation xml:lang="en-US">ID</skos:notation>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/NYS-SS-Theme/2">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+    <skos:prefLabel xml:lang="en-US">Development, Movement, and Interaction of Cultures</skos:prefLabel>
+    <skos:notation xml:lang="en-US">MOV</skos:notation>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/NYS-SS-Theme/3">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+    <skos:prefLabel xml:lang="en-US">Time, Continuity, and Change</skos:prefLabel>
+    <skos:notation xml:lang="en-US">TCC</skos:notation>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/NYS-SS-Theme/4">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+    <skos:prefLabel xml:lang="en-US">Geography, Humans, and the Environment</skos:prefLabel>
+    <skos:notation xml:lang="en-US">GEO</skos:notation>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/NYS-SS-Theme/5">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+    <skos:prefLabel xml:lang="en-US">Development and Transformation of Social Structures</skos:prefLabel>
+    <skos:notation xml:lang="en-US">SOC</skos:notation>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/NYS-SS-Theme/6">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+    <skos:prefLabel xml:lang="en-US">Power, Authority, and Governance</skos:prefLabel>
+    <skos:notation xml:lang="en-US">GOV</skos:notation>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/NYS-SS-Theme/7">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+    <skos:prefLabel xml:lang="en-US">Civic Ideals and Practices</skos:prefLabel>
+    <skos:notation xml:lang="en-US">CIV</skos:notation>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/NYS-SS-Theme/8">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+    <skos:prefLabel xml:lang="en-US">Creation, Expansion, and Interaction of Economic Systems</skos:prefLabel>
+    <skos:notation xml:lang="en-US">ECO</skos:notation>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/NYS-SS-Theme/9">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+    <skos:prefLabel xml:lang="en-US">Science, Technology, and Innovation</skos:prefLabel>
+    <skos:notation xml:lang="en-US">TECH</skos:notation>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/NYS-SS-Theme/10">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+    <skos:prefLabel xml:lang="en-US">Global Connections and Exchange</skos:prefLabel>
+    <skos:notation xml:lang="en-US">EXCH</skos:notation>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NYS-SS-Theme/" />
+  </skos:Concept>
+</rdf:RDF>

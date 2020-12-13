@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <!-- ASN SKOS vocabulary-->
+  <!-- ASN vocabulary description -->
+  <skos:ConceptScheme rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/">
+    <dc:title xml:lang="en-CA">ASN Education Level - Ontario Vocabulary</dc:title>
+    <dc:description xml:lang="en-CA">This vocabulary defines elementary and secondary education levels for Ontario.</dc:description>
+    <dc:creator xml:lang="en-CA">D2L</dc:creator>
+    <dcterms:created rdf:datatype="http://purl.org/dc/terms/W3CDTF">2014-09-26</dcterms:created>
+    <dcterms:modified rdf:datatype="http://purl.org/dc/terms/W3CDTF">2015-01-07</dcterms:modified>
+    <skos:scopeNote xml:lang="en-CA">Additional education levels will be added as necessary.</skos:scopeNote>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Elementary"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Secondary"/>
+  </skos:ConceptScheme>
+  <!-- ASN:CAN-ON Elementary Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Elementary">
+    <skos:prefLabel xml:lang="en-CA">Elementary</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/K"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/1"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/2"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/3"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/4"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/5"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/6"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/7"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/8"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/" />
+  </skos:Concept>
+   <!-- ASN:CAN-ON Secondary Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Secondary">
+    <skos:prefLabel xml:lang="en-CA">Secondary</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/9"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/10"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/11"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/12"/>
+    </skos:Concept>
+  <!-- ASN:CAN-ON Kindergarten Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/K">
+    <skos:prefLabel xml:lang="en-CA">K</skos:prefLabel>
+    <skos:altLabel xml:lang="en-CA">Kindergarten</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Elementary"/>
+    <skos:scopeNote xml:lang="en-CA">Grade Primary or Kindergarten (ages 5-6).</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/" />
+  </skos:Concept>
+  <!-- ASN:CAN-ON Grade 1 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/1">
+    <skos:prefLabel xml:lang="en-CA">1</skos:prefLabel>
+    <skos:altLabel xml:lang="en-CA">Grade 1</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Elementary"/>
+    <skos:scopeNote xml:lang="en-CA">Grade 1 (ages 6-7)</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/" />
+  </skos:Concept>
+  <!-- ASN:CAN-ON Grade 2 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/2">
+    <skos:prefLabel xml:lang="en-CA">2</skos:prefLabel>
+    <skos:altLabel xml:lang="en-CA">Grade 2</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Elementary"/>
+    <skos:scopeNote xml:lang="en-CA">Grade 2 (ages 7-8)</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/" />
+  </skos:Concept>
+  <!-- ASN:CAN-ON Grade 3 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/3">
+    <skos:prefLabel xml:lang="en-CA">3</skos:prefLabel>
+    <skos:altLabel xml:lang="en-CA">Grade 3</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Elementary"/>
+    <skos:scopeNote xml:lang="en-CA">Grade 3 (ages 8-9)</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/" />
+  </skos:Concept>
+  <!-- ASN:CAN-ON Grade 4 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/4">
+    <skos:prefLabel xml:lang="en-CA">4</skos:prefLabel>
+    <skos:altLabel xml:lang="en-CA">Grade 4</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Elementary"/>
+    <skos:scopeNote xml:lang="en-CA">Grade 4 (ages 9-10)</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/" />
+  </skos:Concept>
+ <!-- ASN:CAN-ON Grade 5 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/5">
+    <skos:prefLabel xml:lang="en-CA">5</skos:prefLabel>
+    <skos:altLabel xml:lang="en-CA">Grade 5</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Elementary"/>
+    <skos:scopeNote xml:lang="en-CA">Grade 5 (ages 10-11)</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/" />
+  </skos:Concept>
+  <!-- ASN:CAN-ON Grade 6 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/6">
+    <skos:prefLabel xml:lang="en-CA">6</skos:prefLabel>
+    <skos:altLabel xml:lang="en-CA">Grade 6</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Elementary"/>
+    <skos:scopeNote xml:lang="en-CA">Grade 6 (ages 11-12)</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/" />
+  </skos:Concept>
+  <!-- ASN:CAN-ON Grade 7 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/7">
+    <skos:prefLabel xml:lang="en-CA">7</skos:prefLabel>
+    <skos:altLabel xml:lang="en-CA">Grade 7</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Elementary"/>
+    <skos:scopeNote xml:lang="en-CA">Grade 7 (ages 12-13)</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/" />
+  </skos:Concept>
+  <!-- ASN:CAN-ON Grade 8 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/8">
+    <skos:prefLabel xml:lang="en-CA">8</skos:prefLabel>
+    <skos:altLabel xml:lang="en-CA">Grade 8</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Elementary"/>
+    <skos:scopeNote xml:lang="en-CA">Grade 8 (ages 13-14)</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/" />
+  </skos:Concept>
+  <!-- ASN:CAN-ON Grade 9 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/9">
+    <skos:prefLabel xml:lang="en-CA">9</skos:prefLabel>
+    <skos:altLabel xml:lang="en-CA">Grade 9</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Secondary"/>
+    <skos:scopeNote xml:lang="en-CA">Grade 9 (ages 14-15)</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/" />
+  </skos:Concept>
+  <!-- ASN:CAN-ON Grade 10 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/10">
+    <skos:prefLabel xml:lang="en-CA">10</skos:prefLabel>
+    <skos:altLabel xml:lang="en-CA">Grade 10</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Secondary"/>
+    <skos:scopeNote xml:lang="en-CA">Grade 10 (ages 15-16)</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/" />
+  </skos:Concept>
+  <!-- ASN:CAN-ON Grade 11 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/11">
+    <skos:prefLabel xml:lang="en-CA">11</skos:prefLabel>
+    <skos:altLabel xml:lang="en-CA">Grade 11</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Secondary"/>
+    <skos:scopeNote xml:lang="en-CA">Grade 11 (ages 16-17)</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/" />
+  </skos:Concept>
+  <!-- ASN:CAN-ON Grade 12 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/12">
+    <skos:prefLabel xml:lang="en-CA">12</skos:prefLabel>
+    <skos:altLabel xml:lang="en-CA">Grade 12</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/Secondary"/>
+    <skos:scopeNote xml:lang="en-CA">Grade 12 (ages 17-18)</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel_CAN-ON/" />
+  </skos:Concept>
+</rdf:RDF>

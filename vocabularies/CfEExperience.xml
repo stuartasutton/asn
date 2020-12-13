@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <!-- About -->
+  <skos:ConceptScheme rdf:about="http://purl.org/ASN/scheme/CfEExperience/">
+    <dc:title xml:lang="en-US">Scottish Curriculum for Excellence Learning Experiences Vocabulary</dc:title>
+    <dc:description xml:lang="en-US">This vocabulary defines various experiences associated with Scottish Curriculum for Excellence outcomes</dc:description>
+    <dc:creator xml:lang="en-US">JES &amp; Co.</dc:creator>
+    <dcterms:created rdf:datatype="http://purl.org/dc/terms/W3CDTF">2013-06-26</dcterms:created>
+    <dcterms:modified rdf:datatype="http://purl.org/dc/terms/W3CDTF">2015-01-07</dcterms:modified>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages"/>
+  </skos:ConceptScheme>
+  <!-- End About -->
+  <!-- Top Concepts -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages">
+    <skos:prefLabel xml:lang="en-GB">Languages</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish"/>
+  </skos:Concept>
+  <!-- End Concepts -->
+  <!-- Concepts -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish">
+    <skos:prefLabel xml:lang="en-GB">Literacy and English</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Reading"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Writing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking">
+    <skos:prefLabel xml:lang="en-GB">Listening and talking</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking/EnjoymentChoice"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking/ToolsListeningTalking"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking/FindingUsingInformation"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking/UnderstandingAnalysingEvaluating"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking/CreatingTexts"/>
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking/EnjoymentChoice">
+    <skos:prefLabel xml:lang="en-GB">Enjoyment and choice</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-GB">within a motivating and challenging environment, developing an awareness of the relevance of texts in my life</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking/ToolsListeningTalking">
+    <skos:prefLabel xml:lang="en-GB">Tools for listening and talking</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-GB">to help me when interacting or presenting within and beyond my place of learning</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking/FindingUsingInformation">
+    <skos:prefLabel xml:lang="en-GB">Finding and using information</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-GB">when listening to, watching and talking about texts with increasingly complex ideas, structures and specialist vocabulary</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking"/>    
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking/UnderstandingAnalysingEvaluating">
+    <skos:prefLabel xml:lang="en-GB">Understanding, analysing and evaluating</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-GB">investigating and/or appreciating texts with increasingly complex ideas, structures and specialist vocabulary for different purposes</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking"/>    
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking/CreatingTexts">
+    <skos:prefLabel xml:lang="en-GB">Creating texts</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-GB">applying the elements others use to create different types of short and extended texts with increasingly complex ideas, structures and vocabulary</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/ListeningTalking"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Reading">
+    <skos:prefLabel xml:lang="en-GB">Reading</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Reading/EnjoymentChoice"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Reading/ToolsReading"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Reading/FindingUsingInformation"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Reading/UnderstandingAnalysingEvaluating"/>
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Reading/EnjoymentChoice">
+    <skos:prefLabel xml:lang="en-GB">Enjoyment and choice</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-GB">within a motivating and challenging environment, developing an awareness of the relevance of texts in my life</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Reading"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Reading/ToolsReading">
+    <skos:prefLabel xml:lang="en-GB">Tools for reading</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-GB">to help me use texts with increasingly complex or unfamiliar ideas, structures and vocabulary within and beyond my place of learning</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Reading"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Reading/FindingUsingInformation">
+    <skos:prefLabel xml:lang="en-GB">Finding and using information</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-GB">when reading and using fiction and non-fiction texts with increasingly complex ideas, structures and specialist vocabulary</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Reading"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Reading/UnderstandingAnalysingEvaluating">
+    <skos:prefLabel xml:lang="en-GB">Understanding, analysing and evaluating</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-GB">investigating and/or appreciating fiction and non-fiction texts with increasingly complex ideas, structures and specialist vocabulary for different purposes</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Reading"/>
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Writing">
+    <skos:prefLabel xml:lang="en-GB">Writing</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Writing/EnjoymentChoice"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Writing/ToolsWriting"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Writing/OrganisingUsingInformation"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Writing/CreatingTexts"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Writing/EnjoymentChoice">
+    <skos:prefLabel xml:lang="en-GB">Enjoyment and choice</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-GB">within a motivating and challenging environment, developing an awareness of the relevance of texts in my life</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Writing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Writing/ToolsWriting">
+    <skos:prefLabel xml:lang="en-GB">Tools for writing</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-GB">using knowledge of technical aspects to help my writing communicate effectively within and beyond my place of learning</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Writing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Writing/OrganisingUsingInformation">
+    <skos:prefLabel xml:lang="en-GB">Organising and using information</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-GB">considering texts to help create short and extended texts for different purposes</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Writing"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Writing/CreatingTexts">
+    <skos:prefLabel xml:lang="en-GB">Creating texts</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-GB">applying the elements which writers use to create different types of short and extended texts with increasingly complex ideas, structures and vocabulary</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/CfEExperience/" />
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/CfEExperience/Languages/LiteracyEnglish/Writing"/>
+  </skos:Concept>
+</rdf:RDF>

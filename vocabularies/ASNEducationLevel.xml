@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <!-- ASN SKOS topic vocabulary-->
+  <!-- ASN vocabulary description -->
+  <skos:ConceptScheme rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/">
+    <dc:title xml:lang="en-US">ASN Education Level Vocabulary</dc:title>
+    <dc:description xml:lang="en-US">This vocabulary defines education levels for pre-kindergarten through grade 12 for the United States. It also defines general categories for post-secondary education (vocational, professional and life-long learning).</dc:description>
+    <dc:creator xml:lang="en-US">Stuart A. Sutton</dc:creator>
+    <dcterms:modified rdf:datatype="http://purl.org/dc/terms/W3CDTF">2015-01-07</dcterms:modified>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/PreKto12"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/HigherEducation"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/AdultEducation"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/LifeLongLearning"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/ProfessionalEducation-Development"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/VocationalTraining"/>
+  </skos:ConceptScheme>
+  <!-- ASN Grades PreK to 12 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/PreKto12">
+    <skos:prefLabel xml:lang="en-US">Pre-K to 12</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/ElementarySchool"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/MiddleSchool"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/HighSchool"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Elementary School Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/ElementarySchool">
+    <skos:prefLabel xml:lang="en-US">Elementary School</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/PreKto12"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/1"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/2"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/3"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/4"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/5"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/K"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/Pre-K"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Pre-Kindergarten Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/Pre-K">
+    <skos:prefLabel xml:lang="en-US">Pre-Kindergarten</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Nursery School</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">Pre-K</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">Preschool</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/ElementarySchool"/>
+    <skos:scopeNote xml:lang="en-US">Activities and/or experiences that are intended to effect developmental changes in children, from birth to entrance in kindergarten</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Kindergarten Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/K">
+    <skos:prefLabel xml:lang="en-US">K</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Kindergarten</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/ElementarySchool"/>
+    <skos:scopeNote xml:lang="en-US">A program or class for four-year-old to six-year-old children that serves as an introduction to school</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Grade 1 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/1">
+    <skos:prefLabel xml:lang="en-US">1</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">First Grade</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/ElementarySchool"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Grade 2 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/2">
+    <skos:prefLabel xml:lang="en-US">2</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Second Grade</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/ElementarySchool"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Grade 3 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/3">
+    <skos:prefLabel xml:lang="en-US">3</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Third Grade</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/ElementarySchool"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Grade 4 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/4">
+    <skos:prefLabel xml:lang="en-US">4</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Fourth Grade</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/ElementarySchool"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Grade 5 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/5">
+    <skos:prefLabel xml:lang="en-US">5</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Fifth Grade</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/ElementarySchool"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Middle School Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/MiddleSchool">
+    <skos:prefLabel xml:lang="en-US">Middle School</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/PreKto12"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/6"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/7"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/8"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Grade 6 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/6">
+    <skos:prefLabel xml:lang="en-US">6</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Sixth Grade</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/MiddleSchool"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Grade 7 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/7">
+    <skos:prefLabel xml:lang="en-US">7</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Seventh Grade</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/MiddleSchool"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Grade 8 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/8">
+    <skos:prefLabel xml:lang="en-US">8</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Eighth Grade</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/MiddleSchool"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN High School Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/HighSchool">
+    <skos:prefLabel xml:lang="en-US">High School</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/PreKto12"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/9"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/10"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/11"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/12"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Grade 9 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/9">
+    <skos:prefLabel xml:lang="en-US">9</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Ninth Grade</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/HighSchool"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Grade 10 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/10">
+    <skos:prefLabel xml:lang="en-US">10</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Tenth Grade</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/HighSchool"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Grade 11 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/11">
+    <skos:prefLabel xml:lang="en-US">11</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Eleventh Grade</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/HighSchool"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Grade 12 Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/12">
+    <skos:prefLabel xml:lang="en-US">12</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Twelfth Grade</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/HighSchool"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Higher Education Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/HigherEducation">
+    <skos:prefLabel xml:lang="en-US">Higher Education</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">College</skos:altLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/Graduate"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/Undergraduate-UpperDivision"/>
+    <skos:narrower rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/Undergraduate-LowerDivision"/>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Undergraduate (Lower Division) Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/Undergraduate-LowerDivision">
+    <skos:prefLabel xml:lang="en-US">Undergraduate (Lower Division)</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Community College</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">Junior College</skos:altLabel>
+    <skos:altLabel xml:lang="en-US">Two Year College</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/HigherEducation"/>
+    <skos:scopeNote xml:lang="en-US">Use also for: Public or private postsecondary institutions providing at least 2, but less than 4, years of academic and/or occupational education. Two Year Institution: An institution legally authorized to offer and offering at least a 2-year program of college-level studies which terminates in an associate degree or is principally creditable toward a baccalaureate degree.</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Undergraduate (Upper Division) Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/Undergraduate-UpperDivision">
+    <skos:prefLabel xml:lang="en-US">Undergraduate (Upper Division)</skos:prefLabel>
+    <skos:altLabel xml:lang="en-US">Four Year College</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/HigherEducation"/>
+    <skos:scopeNote xml:lang="en-US">Study in an institution of higher education that precedes the bachelor's or first professional degree</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Graduate Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/Graduate">
+    <skos:prefLabel xml:lang="en-US">Graduate</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/HigherEducation"/>
+    <skos:scopeNote xml:lang="en-US">Provided in graduate schools that generally require a university diploma as a minimum condition for admission</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Adult Education Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/AdultEducation">
+    <skos:prefLabel xml:lang="en-US">Adult Education</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+    <skos:scopeNote xml:lang="en-US">Adult Education enables adults to (1) become literate and obtain the knowledge and skills necessary for employment and self-sufficiency, (2) obtain the educational skills necessary to become full partners in the educational development of their children, and (3) complete a secondary school education and prepare for postsecondary education.</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+    <!-- ASN Life-Long Learning Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/LifeLongLearning">
+    <skos:prefLabel xml:lang="en-US">Life-Long Learning</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+    <skos:scopeNote xml:lang="en-US">A continuing process of behavioral and cognitive changes through the integration of knowledge and experience. Learning is achieved through formal and informal activities.</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+  <!-- ASN Professional Education Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/ProfessionalEducation-Development">
+    <skos:prefLabel xml:lang="en-US">Professional Education &amp; Further Development</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+    <skos:scopeNote xml:lang="en-US">Provided in professional schools (or sanctioned educational activities) that generally require a university diploma as a minimum condition for admission or study.</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+    <!-- ASN Vocational Education Definition -->
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNEducationLevel/VocationalTraining">
+    <skos:prefLabel xml:lang="en-US">Vocational Training</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+    <skos:scopeNote xml:lang="en-US">Provided in schools that focus on teaching vocational skills and frequently require no previous knowledge or experience.</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNEducationLevel/" />
+  </skos:Concept>
+</rdf:RDF>

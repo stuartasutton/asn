@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <!-- SKOS for NGSS Topics-->
+  <skos:ConceptScheme rdf:about="http://purl.org/ASN/scheme/NGSSTopic/">
+    <dc:title xml:lang="en-US">Next Generation Science Standards - Topics</dc:title>
+    <dc:description xml:lang="en-US">A vocabulary consisting of the NGSS topics.</dc:description>
+    <dc:creator xml:lang="en-US">JES &amp; Co.</dc:creator>
+    <dcterms:created rdf:datatype="http://purl.org/dc/terms/W3CDTF">2013-05-22</dcterms:created>
+    <dcterms:modified rdf:datatype="http://purl.org/dc/terms/W3CDTF">2015-01-07</dcterms:modified>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/1"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/2"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/3"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/4"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/5"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/6"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/7"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/8"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/9"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/10"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/11"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/12"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/13"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/14"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/15"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/16"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/17"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/18"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/19"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/20"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/21"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/22"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/23"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/24"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/25"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/26"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/27"/>
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/1">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Forces and Interactions: Pushes and Pulls</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/2">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Interdependent Relationships in Ecosystems: Animals, Plants, and Their Environment</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/3">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Weather and Climate</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/4">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Waves: Light and Sound</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/5">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Structure, Function, and Information Processing</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/6">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Space Systems: Patterns and Cycles</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/7">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Structure and Properties of Matter</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/8">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Interdependent Relationships in Ecosystems</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/9">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Earth's Systems: Processes that Shape the Earth</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/10">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Engineering Design</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/11">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Forces and Interactions</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/12">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Inheritance and Variation of Traits: Life Cycles and Traits</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/13">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Energy</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/14">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Waves: Waves and Information</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/15">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Matter and Energy in Organisms and Ecosystems</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/16">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Earth's Systems</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/17">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Space Systems: Stars and the Solar System</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/18">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Chemical Reactions</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/19">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Waves and Electromagnetic Radiation</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/20">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Growth, Development, and Reproduction of Organisms</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/21">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Natural Selection and Adaptations</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/22">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Space Systems</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/23">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">History of Earth</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/24">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Human Impacts</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/25">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Structure and Function</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/26">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Inheritance and Variation of Traits</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+    <skos:Concept rdf:about="http://purl.org/ASN/scheme/NGSSTopic/27">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/"/>
+    <skos:prefLabel xml:lang="en-US">Natural Selection and Evolution</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/NGSSTopic/" />
+  </skos:Concept>
+</rdf:RDF>
