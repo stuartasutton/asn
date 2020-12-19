@@ -2,20 +2,20 @@
 	"@context": "https://github.com/stuartasutton/asn/blob/master/asnContext.json",
 	"@graph": [
         {
-            "@id": "asn:",
+            "@id": "https://github.com/stuartasutton/asn/blob/master/ASN_Profile.jsonld",
             "dc:creator": [
-                {"en-US": "University of Washington"},
+                {"en-US": "Informnation School of the University of Washington (Seattle)"},
                 {"en-US": "JES & Co"}
             ],
             "dcterms:rightsHolder": {"en-US": "University of Washington"},
             "dcterms:rights": "https://creativecommons.org/licenses/by/4.0/",
             "dc:contributor": {"en-US": "Desire2Learn (D2L)"},
-            "dc:publisher": {"en-US": "University of Washington"},
+            "dc:publisher": {"en-US": "Informnation School of the University of Washington (Seattle)"},
             "dc:description": {"en-US": "The Achievement Standards Network Application Profile (ASN-AP) provides URIs and definitions for all of the terms used in ASN metadata instances including properties from the ASN namespace as well as properties borrowed from other namespaces such as those of the Dublin Core Metadata Initiatve (DCMI)."},
             "dc:language": {"en-US": "English"},
-            "dc:title": {"en-US": "The Achievement Standards Network Application Profile"},
+            "dc:title": {"en-US": "The Achievement Standards Network Application Profile (ASN-AP)"},
             "dcterms:issued": "2020-11-28",
-            "dcterms:modified": "2020-11-28"
+            "dcterms:modified": "2020-12-19"
         },
         {
             "@id": "asn:CorrelationResource",
