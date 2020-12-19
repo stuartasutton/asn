@@ -564,7 +564,7 @@
   rdfs:subPropertyOf dct:conformsTo ;
   rdfs:domain asn:LearningResource ;
   rdfs:range asn:Statement ;
-  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> ,
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/> .
   
 <http://www.w3.org/2004/02/skos/core#note>
   a rdf:Property ;
