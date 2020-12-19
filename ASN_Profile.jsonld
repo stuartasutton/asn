@@ -297,7 +297,7 @@
             "rdfs:domain": "asn:Statement",
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Concept Keyword"},
-            "rdfs:range": "rdf:Literal",
+            "rdfs:range": "rdf:langString",
             "rdfs:subPropertyOf": {"en-US": "dc:subject"}
         },
         {
@@ -318,6 +318,15 @@
             "rdfs:isDefinedBy": "dcterms:",
             "rdfs:label": {"en-US": "Created"},
             "rdfs:range": "xsd:dateTime"
+        },
+        {
+            "@id": "asn:criterionCategoryOf",
+            "@type": "rdfs:Property",
+            "rdfs:comment": {"en-US": "Resource referenced is a Rubric to which this CriterionCategory belongs."},
+            "rdfs:domain": "asn:CriterionCategory",
+            "rdfs:isDefinedBy": "asn:",
+            "rdfs:label": {"en-US": "Criterian Catrgory Of"},
+            "rdfs:range": "asn:Rubric"
         },
         {
             "@id": "asn:criterionFor",
