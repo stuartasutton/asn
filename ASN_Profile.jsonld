@@ -773,7 +773,7 @@
             ],
             "rdfs:isDefinedBy": "dcterms:",
             "rdfs:label": {"en-US": "Rights"},
-            "rdfs:range": "rdfs:Literal"
+            "rdfs:range": "rdf:langString"
         },
         {
             "@id": "dcterms:rightsHolder",
