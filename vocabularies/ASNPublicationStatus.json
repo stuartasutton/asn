@@ -1,0 +1,109 @@
+[
+    {
+        "@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/",
+        "@type": ["http://www.w3.org/2004/02/skos/core#ConceptScheme"],
+        "http://purl.org/dc/elements/1.1/title": [
+            {
+                "@value": "ASN Publication Status Vocabulary",
+                "@language": "en-US"
+            }
+        ],
+        "http://purl.org/dc/elements/1.1/description": [
+            {
+                "@value": "A vocabulary describing the various publication statuses of ASN documents and statements.",
+                "@language": "en-US"
+            }
+        ],
+        "http://purl.org/dc/elements/1.1/creator": [
+            {
+                "@value": "Stuart A. Sutton",
+                "@language": "en-US"
+            }
+        ],
+        "http://purl.org/dc/terms/created": [
+            {
+                "@value": "2009-02-12",
+                "@type": "http://purl.org/dc/terms/W3CDTF"
+            }
+        ],
+        "http://purl.org/dc/terms/modified": [
+            {
+                "@value": "2015-01-07",
+                "@type": "http://purl.org/dc/terms/W3CDTF"
+            }
+        ],
+        "http://www.w3.org/2004/02/skos/core#hasTopConcept": [
+            {"@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/Draft"},
+            {"@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/Deprecated"},
+            {"@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/Published"}
+        ]
+    },
+    {
+        "@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/Deprecated",
+        "@type": ["http://www.w3.org/2004/02/skos/core#Concept"],
+        "http://www.w3.org/2004/02/skos/core#inScheme": [
+            {"@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/"}
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+            {
+                "@value": "Deprecated",
+                "@language": "en-US"
+            }
+        ],
+        "http://www.w3.org/2004/02/skos/core#definition": [
+            {
+                "@value": "Status assigned to a document/statement by the promulgating agency or by the ASN Directorate on request of the promulgating agency asserting that the document/statement has been superseded or its use otherwise disfavored. Documents/statements are never removed from the ASN and never become dereferencable.",
+                "@language": "en-US"
+            }
+        ],
+        "http://www.w3.org/2004/02/skos/core#topConceptOf": [
+            {"@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/"}
+        ]
+    },
+    {
+        "@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/Draft",
+        "@type": ["http://www.w3.org/2004/02/skos/core#Concept"],
+        "http://www.w3.org/2004/02/skos/core#inScheme": [
+            {"@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/"}
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+            {
+                "@value": "Draft",
+                "@language": "en-US"
+            }
+        ],
+        "http://www.w3.org/2004/02/skos/core#definition": [
+            {
+                "@value": "A status assigned to all documents/statements during development. Draft documents and statements should not be displayed to anyone other than their owners and ASN Directorate administrators.",
+                "@language": "en-US"
+            }
+        ],
+        "http://www.w3.org/2004/02/skos/core#topConceptOf": [
+            {"@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/"}
+        ]
+    },
+    {
+        "@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/Published",
+        "@type": ["http://www.w3.org/2004/02/skos/core#Concept"],
+        "http://www.w3.org/2004/02/skos/core#inScheme": [
+            {"@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/"}
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+            {
+                "@value": "Published",
+                "@language": "en-US"
+            }
+        ],
+        "http://www.w3.org/2004/02/skos/core#definition": [
+            {
+                "@value": "Status assigned to all documents that have been submitted by their owners to the ASN Directorate and, upon  quality review, published.",
+                "@language": "en-US"
+            }
+        ],
+        "http://www.w3.org/2004/02/skos/core#topConceptOf": [
+            {"@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/"}
+        ]
+    },
+    {"@id": "http://www.w3.org/2004/02/skos/core#Concept"},
+    {"@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"}
+]
