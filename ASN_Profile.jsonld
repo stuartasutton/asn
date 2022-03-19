@@ -576,7 +576,7 @@
             "@type": "rdf:Property",
             "skos:scopeNote": {"en-US": "Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided."},
             "rdfs:comment": {"en-US": "A legal document giving official permission to do something with the resource."},
-            "rdfs:domain": "asn:standardDocument",
+            "rdfs:domain": "asn:StandardDocument",
             "rdfs:isDefinedBy": "dcterms:",
             "rdfs:label": {"en-US": "License"},
             "rdfs:range": "dcterms:LicenseDocument"
@@ -849,7 +849,7 @@
             "@id": "asn:statementLabel",
             "@type": "rdf:Property",
             "rdfs:comment": {"en-US": "The textual label designating the class of statement in the structure of statements in the Standard Document--e.g., Standard, Benchmark, Strand, Topic, etc."},
-            "rdfs:domain": "asn:statement",
+            "rdfs:domain": "asn:Statement",
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Statement Label"},
             "rdfs:range": "rdf:langString"
