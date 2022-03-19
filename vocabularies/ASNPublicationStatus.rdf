@@ -1,1 +1,29 @@
-<?xml version="1.0"?><rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">  <!-- ASN SKOS Publication Status vocabulary-->  <skos:ConceptScheme rdf:about="http://purl.org/ASN/scheme/ASNPublicationStatus/">    <dc:title xml:lang="en-US">ASN Publication Status Vocabulary</dc:title>    <dc:description xml:lang="en-US">A vocabulary describing the various publication statuses of ASN documents and statements.</dc:description>    <dc:creator xml:lang="en-US">Stuart A. Sutton</dc:creator>    <dcterms:created rdf:datatype="http://purl.org/dc/terms/W3CDTF">2009-02-12</dcterms:created>    <dcterms:modified rdf:datatype="http://purl.org/dc/terms/W3CDTF">2015-01-07</dcterms:modified>    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/Draft"/>    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/Deprecated"/>    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/Published"/>  </skos:ConceptScheme>  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNPublicationStatus/Draft">    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/"/>    <skos:prefLabel xml:lang="en-US">Draft</skos:prefLabel>    <skos:definition xml:lang="en-US">A status assigned to all documents/statements during development. Draft documents and statements should not be displayed to anyone other than their owners and ASN Directorate administrators.</skos:definition>    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/" />  </skos:Concept>  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNPublicationStatus/Deprecated">    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/"/>    <skos:prefLabel xml:lang="en-US">Deprecated</skos:prefLabel>    <skos:definition xml:lang="en-US">Status assigned to a document/statement by the promulgating agency or by the ASN Directorate on request of the promulgating agency asserting that the document/statement has been superseded or its use otherwise disfavored. Documents/statements are never removed from the ASN and never become dereferencable.</skos:definition>    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/" />  </skos:Concept>  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNPublicationStatus/Published">    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/"/>    <skos:prefLabel xml:lang="en-US">Published</skos:prefLabel>    <skos:definition xml:lang="en-US">Status assigned to all documents that have been submitted by their owners to the ASN Directorate and, upon  quality review, published.</skos:definition>    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/" />  </skos:Concept></rdf:RDF>
+<?xml version="1.0"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <!-- ASN SKOS Publication Status vocabulary-->
+    <dc:description xml:lang="en-US">A vocabulary describing the various publication statuses of ASN documents and statements.</dc:description>
+    <dc:creator xml:lang="en-US">Stuart A. Sutton</dc:creator>
+    <dcterms:created rdf:datatype="http://purl.org/dc/terms/W3CDTF">2009-02-12</dcterms:created>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/Draft"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/Deprecated"/>
+    <skos:hasTopConcept rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/Published"/>
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNPublicationStatus/Draft">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/"/>
+    <skos:prefLabel xml:lang="en-US">Draft</skos:prefLabel>
+    <skos:definition xml:lang="en-US">A status assigned to all documents/statements during development. Draft documents and statements should not be displayed to anyone other than their owners and ASN Directorate administrators.</skos:definition>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNPublicationStatus/Deprecated">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/"/>
+    <skos:prefLabel xml:lang="en-US">Deprecated</skos:prefLabel>
+    <skos:definition xml:lang="en-US">Status assigned to a document/statement by the promulgating agency or by the ASN Directorate on request of the promulgating agency asserting that the document/statement has been superseded or its use otherwise disfavored. Documents/statements are never removed from the ASN and never become dereferencable.</skos:definition>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://purl.org/ASN/scheme/ASNPublicationStatus/Published">
+    <skos:inScheme rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/"/>
+    <skos:prefLabel xml:lang="en-US">Published</skos:prefLabel>
+    <skos:definition xml:lang="en-US">Status assigned to all documents that have been submitted by their owners to the ASN Directorate and, upon  quality review, published.</skos:definition>
+    <skos:topConceptOf rdf:resource="http://purl.org/ASN/scheme/ASNPublicationStatus/" />
+  </skos:Concept>
+</rdf:RDF>
