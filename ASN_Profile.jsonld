@@ -872,7 +872,7 @@
             "rdfs:isDefinedBy": "dcterms:",
             "rdfs:label": {"en-US": "Subject"},
             "rdfs:range": "skos:Concept",
-            "skos:scopeNote": {"en-US": "Used in ASN to denote a subject subject area of the framework; e.g., \"science\", \"mathematics\", \"English\"."}
+            "skos:scopeNote": {"en-US": "Used in ASN to denote a subject area of the framework; e.g., \"science\", \"mathematics\", \"English\"."}
         },
         {
             "@id": "dcterms:tableOfContents",
