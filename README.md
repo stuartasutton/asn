@@ -37,6 +37,8 @@ This vocabulary consists of the topics found in the Next Generation Science Stan
 
 1. New York State (NYS) Social Studoes Framework Themes (SKOS Encoding)—**NYS-SS-Theme.rdf**
 
+1. Scottish Curriculum for Excellence Learning Experiences Vocabulary—**CfEExperience.rdf**
+
 ***The most frequently found vocabulary terms come from the: (1) Subject/Topic vocabulary, (2) Education Level vocabularies, (3) Publication Status vocabulary, and (4) Indexing Status vocabulary.*** 
 
 ## Upload
