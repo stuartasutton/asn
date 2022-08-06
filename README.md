@@ -1,7 +1,7 @@
 # Achievement Standards Network (ASN) Files for T3 DESM
 
 ## Schema Files
-There are two ASN schema file defining terms (properties and classes) and a @context file:
+There are two ASN schema files defining terms (properties and classes) and a @context file:
 1. **Schema File 1 (asnTerms.json):** A namespace file defining ASN terms ONLY; 
 
 1. **Schema file 2 (ASN_Profile.jsonld):** A profile schema file including all of the ASN terms in Schema File 1 plus all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Terms).
