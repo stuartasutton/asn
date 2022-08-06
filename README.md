@@ -26,6 +26,8 @@ This vocabulary of learning area subjects is intended to provide a uniform categ
 1. ASN Publication Status Vocabulary (SKOS Encoding)—**ASNPublicationStatus.json** | **ASNPublicationStatus.rdf**
 This vocabulary describes the various publication statuses of ASN Standard Documents and Statements.
 
+1. Authority Status (Original or derived)—**ASNAuthorityStatus.rdf**
+
 1. ASN Indexing Status Vocabulary (SKOS Encoding)—**ASNIndexingStatus.rdf**
 This vocabulary defines whether a statement should or should not be used in correlation work.
 
