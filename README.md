@@ -12,7 +12,7 @@ For DESM purposes, Schema file 2 should be used since it provides all terms that
 
 ## Concept Scheme Files
 
-Currrently, there are eleven concept schemes modeled using W3C's Simple Knowledge Organization System ([SKOS](http://www.w3.org/2004/02/skos/core#)) with most encoded in RDF/XML or JSON-LD. Some of the schemes are encoded in **both** rdf/XML and JSON-LD.  All have been included in the context file (asnContext.json).
+Currrently, there are eleven concept schemes modeled using W3C's Simple Knowledge Organization System ([SKOS](http://www.w3.org/2004/02/skos/core#)) with most encoded in RDF/XML or JSON-LD. Some of the schemes are encoded in **both** rdf/XML and JSON-LD.  None of the concept schemes have been added to the context file since range URIs are stated in full in ASN data. 
 
 1. ASN U.S. Subject/Topic Vocabulary (SKOS Encoding)—**ASNTopic.rdf**
 This vocabulary of learning area subjects is intended to provide a uniform categorization of U.S. achievement standards.
