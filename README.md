@@ -41,6 +41,8 @@ This vocabulary consists of the topics found in the Next Generation Science Stan
 
 1. Scottish Curriculum for Excellence Learning Experiences Vocabulary—**CfEExperience.rdf**
 
+1. Bloom's Taxonomy—**ASNBloomsTaxonomy.rdf**
+
 ***The most frequently found vocabulary terms come from the: (1) Subject/Topic vocabulary, (2) Education Level vocabularies, (3) Publication Status vocabulary, and (4) Indexing Status vocabulary.*** 
 
 ## Upload
