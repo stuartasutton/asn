@@ -1,0 +1,190 @@
+{
+	"@context": "https://github.com/stuartasutton/asn/blob/master/asnContext.json",
+	"@graph": [
+        {
+            "@id": "blooms:",
+            "@type": "skos:ConceptScheme",
+            "dc:title": {"en-US": "Bloom's Taxonomy"},
+            "dc:description": {"en-US": "Cognitive, affective, and psychomotor vocabulary."},
+            "dcterms:created": "2008-11-11",
+            "dcterms:modified": "2015-01-07",
+            "skos:hasTopConcept": [
+                "blooms:cognitive",
+                "blooms:affective",
+                "blooms:psychomotor"
+            ]
+        },
+        {
+            "@id": "blooms:adaptation",
+            "@type": "skos:Concept",
+            "skos:prefLabel": {"en-US": "Adaptation"} ,
+            "skos:broader": "blooms:psychomotor",
+            "skos:inScheme": "blooms:" 
+        },
+        {
+            "@id": "blooms:affective",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Affective"},
+            "skos:topConceptOf": "blooms:" ,
+            "skos:inScheme": "blooms:" ,
+            "skos:narrower": [
+                "blooms:receiving" ,
+                "blooms:responding" ,
+                "blooms:valuing" ,
+                "blooms:organizing" ,
+                "blooms:characterizing"
+            ]
+        },
+        {
+            "@id": "blooms:analysis",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Analysis"} ,
+            "skos:broader": "blooms:cognitive" ,
+            "skos:inScheme": "blooms:" 
+        },
+        {
+            "@id": "blooms:application",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Application"} ,
+            "skos:broader": "blooms:cognitive" ,
+            "skos:inScheme": "blooms:" 
+        },
+        {
+            "@id": "blooms:characterizing",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Characterizing" } ,
+            "skos:broader": "blooms:affective" ,
+            "skos:inScheme": "blooms:"
+        },
+        {
+            "@id": "blooms:cognitive",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Cognitive" } ,
+            "skos:topConceptOf": "blooms:" ,
+            "skos:inScheme": "blooms:" ,
+            "skos:narrower": [
+                "blooms:knowledge" ,
+                "blooms:comprehension" ,
+                "blooms:application" ,
+                "blooms:analysis" ,
+                "blooms:synthesis" ,
+                "blooms:evaluation"
+            ]
+        },
+        {
+            "@id": "blooms:complex-overt-response",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Complex Overt Response"} ,
+            "skos:broader": "blooms:psychomotor",
+            "skos:inScheme": "blooms:"
+        },
+        {
+            "@id": "blooms:comprehension",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Comprehension"} ,
+            "skos:broader": "blooms:cognitive" ,
+            "skos:inScheme": "blooms:"
+        },
+        {
+            "@id": "blooms:evaluation",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Evaluation"} ,
+            "skos:broader": {"en-US": "blooms:cognitive"} ,
+            "skos:inScheme": "blooms:"
+        },
+        {
+            "@id": "blooms:guided-response",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Guided Response"} ,
+            "skos:broader": "blooms:psychomotor" ,
+            "skos:inScheme": "blooms:"
+        },
+        {
+            "@id": "blooms:knowledge",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Knowledge"} ,
+            "skos:broader": "blooms:cognitive" ,
+            "skos:inScheme": "blooms:"
+        },
+        {
+            "@id": "blooms:mechanism",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Mechanism"} ,
+            "skos:broader": "blooms:psychomotor" ,
+            "skos:inScheme": "blooms:"
+        },
+        {
+            "@id": "blooms:organizing",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Organizing"} ,
+            "skos:broader": {"en-US": "blooms:affective"} ,
+            "skos:inScheme": "blooms:"
+        },
+        {
+            "@id": "blooms:origination",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Origination"} ,
+            "skos:broader": {"en-US": "blooms:psychomotor"} ,
+            "skos:inScheme": "blooms:"
+        },
+        {
+            "@id": "blooms:perception",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Perception"} ,
+            "skos:broader": "blooms:psychomotor" ,
+            "skos:inScheme": "blooms:"
+        },
+        {
+            "@id": "blooms:psychomotor",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Psychomotor"} ,
+            "skos:topConceptOf": "blooms:" ,
+            "skos:inScheme": "blooms:" ,
+            "skos:narrower": [
+                "blooms:perception" ,
+                "blooms:set" ,
+                "blooms:guided-response" ,
+                "blooms:mechanism" ,
+                "blooms:complex-overt-response" ,
+                "blooms:adaptation" ,
+                "blooms:origination"
+            ]
+        },
+        {
+            "@id": "blooms:receiving",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Receiving"} ,
+            "skos:broader": "blooms:affective" ,
+            "skos:inScheme": "blooms:"
+        },
+        {
+            "@id": "blooms:responding",
+            "@type": "skos:Concept",
+            "skos:prefLabel": {"en-US": "Responding"} ,
+            "skos:broader": "blooms:affective" ,
+            "skos:inScheme": "blooms:"
+        },
+        {
+            "@id": "blooms:set",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Set"} ,
+            "skos:broader": "blooms:psychomotor" ,
+            "skos:inScheme": "blooms:"
+        },
+        {
+            "@id": "blooms:synthesis",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Synthesis"} ,
+            "skos:broader": "blooms:cognitive" ,
+            "skos:inScheme": "blooms:"
+        },
+        {
+            "@id": "blooms:valuing",
+            "@type": "skos:Concept" ,
+            "skos:prefLabel": {"en-US": "Valuing"} ,
+            "skos:broader": "blooms:affective" ,
+            "skos:inScheme": "blooms:"
+        }
+    
+    ]
+}

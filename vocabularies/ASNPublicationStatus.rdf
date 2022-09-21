@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <!-- ASN SKOS Publication Status vocabulary-->
+    <skos:ConceptScheme>
     <dc:description xml:lang="en-US">A vocabulary describing the various publication statuses of ASN documents and statements.</dc:description>
     <dc:creator xml:lang="en-US">Stuart A. Sutton</dc:creator>
     <dcterms:created rdf:datatype="http://purl.org/dc/terms/W3CDTF">2009-02-12</dcterms:created>
