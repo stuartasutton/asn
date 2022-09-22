@@ -16,6 +16,7 @@
 <!-- ASN APPLICATION PROFILE DESCRIPTION                    -->
 <!-- This data model combines the terms (properties and classes) from the ASN namespace with properties and classes reused from other (non-ASN) namespaces in ASN descriptions such as Dublin Core, Simple Knowledge Organization System (SKOS) and Creative Commons. -->
 <!-- ====================================================== -->    
+
   <rdf:Property rdf:about="http://purl.org/ASN/schema/ap/">
     <dc:title xml:lang="en-US">The Achievement Standards Network Application Profile</dc:title>
     <dc:description xml:lang="en-US">The Achievement Standards Network Application Profile (ASN-AP) provides URIs and definitions for all of the terms used in ASN metadata instances including properties from the ASN namespace as well as properties borrowed from other namespaces such as those of the Dublin Core Metadata Initiatve (DCMI), Simple Knowledge Organization System (SKOS), and Creative Commons.</dc:description>
