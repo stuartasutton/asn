@@ -10,7 +10,7 @@
     xmlns:vann="http://purl.org/vocab/vann/">
     
 <!-- ====================================================== -->
-<!-- SCHEMA DESCRIPTION                                  -->
+<!-- SCHEMA DESCRIPTION                                     -->
 <!-- This ASN data model inludes only those properties defined in the ASN namespace. It does not include the numerous properties reused in ASN descriptions that are defined in other namespaces such as Dublin Core. ASN also provides an application profile (asn_profile.rdf) that integrates the ASN properties and classes defined here as well all properties reused from other namespaces. --> 
 <!-- ====================================================== -->
     
