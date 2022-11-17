@@ -1,5 +1,5 @@
 {
-	"@context": "https://github.com/stuartasutton/asn/blob/master/asnContext.json",
+	"@context": "https://github.com/stuartasutton/asn/blob/master/asnContext.jsonld",
 	"@graph": [
         {
             "@id": "https://github.com/stuartasutton/asn/blob/master/ASN_Profile.jsonld",
