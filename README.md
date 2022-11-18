@@ -46,9 +46,5 @@ This vocabulary consists of the topics found in the Next Generation Science Stan
 
 1. Bloom's Taxonomy—**ASNBloomsTaxonomy.rdf**
 
-***The most frequently found vocabulary terms come from the: (1) Subject/Topic vocabulary, (2) Education Level vocabularies, (3) Publication Status vocabulary, and (4) Indexing Status vocabulary.*** 
-
-## Upload
-
-In all cases, use the Schema File 2 (asnProfile.jsonld) and as many of the thirteen concept schemes as necessary. Also condider whether the asnContext.json file is needed to suport JSON-LD serializations.
+The most frequently found vocabulary terms come from the: (1) Subject/Topic vocabulary, (2) Education Level vocabularies, (3) Publication Status vocabulary, and (4) Indexing Status vocabulary.*** 
 
