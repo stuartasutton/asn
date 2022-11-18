@@ -20,9 +20,9 @@ ASN namespace files defining terms (properties and classes)--four (RDF and JSONL
 
 ## Concept Scheme Files
 
-Currrently, there are thirteen concept schemes modeled using W3C's Simple Knowledge Organization System ([SKOS](http://www.w3.org/2004/02/skos/core#)) with most encoded in RDF/XML or JSON-LD. 
+Currrently, there are thirteen concept schemes modeled using W3C's Simple Knowledge Organization System ([SKOS](http://www.w3.org/2004/02/skos/core#)) with most encoded in RDF/XML. The seven applicable to data describing US resources are listed below along with Bloom's Taxonomy.
 
-The most frequently found vocabulary terms come from the: (1) Subject/Topic vocabulary, (2) Education Level vocabularies, (3) Publication Status vocabulary, and (4) Indexing Status vocabulary.
+The most frequently found vocabulary terms in the D2L-ASN repository come from the: (1) Subject/Topic vocabulary, (2) Education Level vocabularies, (3) Publication Status vocabulary, and (4) Indexing Status vocabulary.
 
 1. U.S. Subject/Topic Vocabulary (SKOS Encoding)—**ASNTopic.rdf**
 This vocabulary of learning area subjects is intended to provide a uniform categorization of U.S. achievement standards.
