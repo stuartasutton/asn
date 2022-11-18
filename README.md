@@ -3,18 +3,23 @@
 ## Schema Files
 
 ASN namespace file defining terms (properties and classes) two important schema files and a @context file:
-1. **Schema File 1 (asnTerms.json):** A namespace file defining ASN terms ONLY; 
+1. **Schema File 1 (asnTerms.jsonld):** A JSONLD version of the namespace file defining ASN terms ONLY; 
 
-1. **Schema file 2 (asnProfile.jsonld):** A profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Terms).
+1. **Schema file 2 (asnProfile.jsonld):** A JSONLD version of the profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Terms).
 
-1. **Context File (asnContext.json):** A context file for use in JSON-LD that includes ALL terms from both the ASN namespace schema and the profile schema.
-Note that in the ASN namespace, the competency framework class is called StandardsDocument and a competency is called a Statement.
+1. **Schema File 3 (asnTerms.rdf):** An RDF version of the namespace file defining ASN terms ONLY; 
 
-Note: Ignore any other files in the repo.
+1. **Schema file 4 (asnProfile.rdf):** An RDF version of the profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Terms).
+
+1. **Context File (asnContext.json):** A context file for referencing from ASN data instances using JSON-LD that includes ALL terms from both the ASN namespace and profile schemas.
+
+*Note 1: In the ASN namespace, the competency framework class is called StandardsDocument and a competency is called a Statement.
+
+*Note 2: Ignore any other files in the repo.
 
 ## Concept Scheme Files
 
-Currrently, there are thirteen concept schemes modeled using W3C's Simple Knowledge Organization System ([SKOS](http://www.w3.org/2004/02/skos/core#)) with most encoded in RDF/XML or JSON-LD. Some of the schemes are encoded in **both** rdf/XML and JSON-LD.  All have been included in the context file (asnContext.json).
+Currrently, there are thirteen concept schemes modeled using W3C's Simple Knowledge Organization System ([SKOS](http://www.w3.org/2004/02/skos/core#)) with most encoded in RDF/XML or JSON-LD. Some of the schemes are encoded in **both** rdf/XML and JSON-LD.
 
 1. ASN U.S. Subject/Topic Vocabulary (SKOS Encoding)—**ASNTopic.rdf**
 This vocabulary of learning area subjects is intended to provide a uniform categorization of U.S. achievement standards.
@@ -46,5 +51,9 @@ This vocabulary consists of the topics found in the Next Generation Science Stan
 
 1. Bloom's Taxonomy—**ASNBloomsTaxonomy.rdf**
 
-The most frequently found vocabulary terms come from the: (1) Subject/Topic vocabulary, (2) Education Level vocabularies, (3) Publication Status vocabulary, and (4) Indexing Status vocabulary.*** 
+***The most frequently found vocabulary terms come from the: (1) Subject/Topic vocabulary, (2) Education Level vocabularies, (3) Publication Status vocabulary, and (4) Indexing Status vocabulary.*** 
+
+## Upload
+
+In all cases, use the Schema File 2 (asnProfile.jsonld) and as many of the thirteen concept schemes as necessary. Also condider whether the asnContext.json file is needed to suport JSON-LD serializations.
 
