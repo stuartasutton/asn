@@ -2,7 +2,8 @@
 
 ## Schema Files
 
-ASN namespace file defining terms (properties and classes) two important schema files and a @context file:
+ASN namespace files defining terms (properties and classes): four (RDF and JSONLD) schema files and a JSONLD @context file:
+
 1. **Schema File 1 (asnTerms.jsonld):** A JSONLD version of the namespace file defining ASN terms ONLY; 
 
 1. **Schema file 2 (asnProfile.jsonld):** A JSONLD version of the profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Terms).
