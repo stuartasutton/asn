@@ -5,18 +5,10 @@
 ASN namespace file defining terms (properties and classes) two important schema files and a @context file:
 1. **Schema File 1 (asnTerms.json):** A namespace file defining ASN terms ONLY; 
 
-1. **Schema file 2 (ASN_Profile.jsonld):** A profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Terms).
+1. **Schema file 2 (asnProfile.jsonld):** A profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Terms).
 
 1. **Context File (asnContext.json):** A context file for use in JSON-LD that includes ALL terms from both the ASN namespace schema and the profile schema.
-
-There are two ASN schema files defining terms (properties and classes) and a @context file:
-1. **Schema File 1 (asnTerms.json):** A namespace file defining ASN terms ONLY; 
-
-1. **Schema file 2 (ASN_Profile.jsonld):** A profile schema file including all of the ASN terms in Schema File 1 plus all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Terms).
-
-1. **Context File (asnContext.json):** A context file for use in JSON-LD that includes ALL terms from both Schema File 1 and Schema File 2.
-
-For DESM purposes, Schema file 2 should be used since it provides all terms that will be found in ASN competency framework instances. Note that in the ASN namespace, the competency framework class is called StandardsDocument and a competency is called a Statement.
+Note that in the ASN namespace, the competency framework class is called StandardsDocument and a competency is called a Statement.
 
 ## Concept Scheme Files
 
@@ -34,8 +26,6 @@ This vocabulary of learning area subjects is intended to provide a uniform categ
 1. ASN Publication Status Vocabulary (SKOS Encoding)—**ASNPublicationStatus.json** | **ASNPublicationStatus.rdf**
 This vocabulary describes the various publication statuses of ASN Standard Documents and Statements.
 
-
------------------
 1. Authority Status (Original or derived)—**ASNAuthorityStatus.rdf**
 
 
@@ -50,8 +40,6 @@ This vocabulary consists of the topics found in the Next Generation Science Stan
 
 1. New York State (NYS) Social Studoes Framework Themes (SKOS Encoding)—**NYS-SS-Theme.rdf**
 
-
------------------
 1. Scottish Curriculum for Excellence Learning Experiences Vocabulary—**CfEExperience.rdf**
 
 1. Bloom's Taxonomy—**ASNBloomsTaxonomy.rdf**
@@ -60,5 +48,5 @@ This vocabulary consists of the topics found in the Next Generation Science Stan
 
 ## Upload
 
-In all cases, upload the Schema File 2 (ASN_Profile.jsonld) and as many of the thirteen concept schemes as the mapping project demands. Also condider whether the asnContext.json file is needed.
+In all cases, use the Schema File 2 (asnProfile.jsonld) and as many of the thirteen concept schemes as necessary. Also condider whether the asnContext.json file is needed to suport JSON-LD serializations.
 
