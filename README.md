@@ -10,6 +10,8 @@ ASN namespace file defining terms (properties and classes) two important schema 
 1. **Context File (asnContext.json):** A context file for use in JSON-LD that includes ALL terms from both the ASN namespace schema and the profile schema.
 Note that in the ASN namespace, the competency framework class is called StandardsDocument and a competency is called a Statement.
 
+Note: Ignore any other file in the repo.
+
 ## Concept Scheme Files
 
 Currrently, there are thirteen concept schemes modeled using W3C's Simple Knowledge Organization System ([SKOS](http://www.w3.org/2004/02/skos/core#)) with most encoded in RDF/XML or JSON-LD. Some of the schemes are encoded in **both** rdf/XML and JSON-LD.  All have been included in the context file (asnContext.json).
