@@ -46,8 +46,3 @@ The jurisdiction of applicability of the standard.
 1. Bloom's Taxonomy—**ASNBloomsTaxonomy.rdf**
 
 Some of the schemes are encoded in **both** rdf/XML and JSON-LD. 
-
-## Upload
-
-In all cases, use the Schema File 2 (asnProfile.jsonld) and as many of the thirteen concept schemes as necessary. Also condider whether the asnContext.json file is needed to suport JSON-LD serializations.
-
