@@ -306,6 +306,19 @@
             "rdfs:range": "asn:Statement"
         },
         {
+            "@id": "dcterms:description",
+            "@type": "rdf:Property",
+            "skos:scopeNote": {"en-US": "In this ASN profile, the description property is used to provide the actual text of the competency (Statement) and to provide an abstract of the competency framework (StandardDocument)."},
+            "rdfs:comment": {"en-US": "An account of the resource."},
+            "rdfs:domain": [
+                "asn:Statement",
+                "asn:StandardDocument"
+            ],
+            "rdfs:isDefinedBy": "dcterms:",
+            "rdfs:label": {"en-US": "Description"},
+            "rdfs:range": "rdf:langString"
+        },
+        {
             "@id": "asn:exactAlignment",
             "@type": "rdf:Property",
             "rdfs:comment": {"en-US": "The relevant concepts in both competencies are coextensive."},
@@ -333,8 +346,6 @@
             "rdfs:label": {"en-US": "Has Child"},
             "rdfs:range": "asn:Concept"
         },
-
-
         {
             "@id": "dcterms:hasPart",
             "@type": "rdf:Property",
@@ -345,7 +356,6 @@
             "rdfs:label": {"en-US": "Has Part"},
             "rdfs:range": "xsd:anyURI"
         },
-
         {
             "@id": "asn:indexingStatus",
             "@type": "rdf:Property",
