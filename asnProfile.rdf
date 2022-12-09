@@ -374,7 +374,7 @@
 
   <rdf:Property rdf:about="http://purl.org/dc/terms/description">
     <rdfs:comment>An account of the resource.</rdfs:comment>
-    <dc:description xml:lang="en-US">In this ASN profile, the description property is used to provide the actual text of the compatency.</dc:description>
+    <dc:description xml:lang="en-US">In this ASN profile, the description property is used to provide the actual text of the competency (Statement) and to provide an abstract of the competency framework (StandardDocument).</dc:description>
     <rdfs:label>Description</rdfs:label>
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/Statement"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
@@ -557,7 +557,7 @@
   </rdf:Property>
   
   <rdf:Property rdf:about="http://purl.org/dc/terms/license">
-    <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/standardDocument"/>
+    <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/StandardDocument"/>
     <rdfs:range rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
     <dc:description xml:lang="en-US">Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided.</dc:description>
     <rdfs:label>License</rdfs:label>
@@ -815,7 +815,7 @@
   <rdf:Property rdf:about="http://purl.org/ASN/schema/core/statementLabel">
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
     <rdfs:comment>The textual label designating the class of statement in the structure of statements in the Standard Document--e.g., Standard, Benchmark, Strand, Topic, etc.</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/statement"/>
+    <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/Statement"/>
     <rdfs:label>Statement Label</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
   </rdf:Property>
