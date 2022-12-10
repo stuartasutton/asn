@@ -18,6 +18,14 @@
             "dcterms:modified": "2022-09-24"
         },
         {
+            "@id": "asn:CompetencyMap",
+            "@type": "rdfs:Class",
+            "skos:scopeNote": {"en-US": "A Competency Map is a profile that borrows statements (asn:Statement) from two or more standard documents (asn:StandardDocument). A Competency Map may or may not define new statements in its own namespace."},
+            "rdfs:comment": {"en-US": "A Competency Map can be viewed as an identified graph that aggregates two or more competency statements (asn:Statement) and the relationships asserted among them."},
+            "rdfs:isDefinedBy": "asn:",
+            "rdfs:label": {"en-US": "Competency Map"}
+        },
+        {
             "@id": "asn:CorrelationResource",
             "@type": "rdfs:Class",
             "skos:scopeNote": "The CorrelationResource is an entity intended to provide a rich description of a mapping (correlation) between a LearningResource and a Statement when a binary assertion of a relationship is insufficient.",
