@@ -427,7 +427,7 @@
         {
             "@id": "dcterms:description",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "In this ASN profile, the description property is used to provide the actual text of the compatency."},
+            "skos:scopeNote": {"en-US": "In this ASN profile, the description property is used to provide the actual text of the competency (Statement) and to provide an abstract of the competency framework (StandardDocument)."},
             "rdfs:comment": {"en-US": "An account of the resource."},
             "rdfs:domain": [
                 "asn:Statement",
