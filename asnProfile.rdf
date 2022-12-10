@@ -17,13 +17,13 @@
 <!-- ====================================================== -->    
 
   <rdf:Property rdf:about="http://purl.org/ASN/schema/ap/">
-    <dc:title xml:lang="en-US">The Achievement Standards Network Application Profile</dc:title>
-    <dc:description xml:lang="en-US">The Achievement Standards Network Application Profile (ASN-AP) provides URIs and definitions for all of the terms used in ASN metadata instances including properties from the ASN namespace as well as properties borrowed from other namespaces such as those of the Dublin Core Metadata Initiatve (DCMI), Simple Knowledge Organization System (SKOS), Creative Commons and Schema.org.</dc:description>
-    <dc:publisher xml:lang="en-US">University of Washington</dc:publisher>
-    <dc:contributor xml:lang="en-US">D2L</dc:contributor>
-    <dc:language xml:lang="en-US">English</dc:language>
+    <dct:title xml:lang="en-US">The Achievement Standards Network Application Profile</dct:title>
+    <dct:description xml:lang="en-US">The Achievement Standards Network Application Profile (ASN-AP) provides URIs and definitions for all of the terms used in ASN metadata instances including properties from the ASN namespace as well as properties borrowed from other namespaces such as those of the Dublin Core Metadata Initiatve (DCMI), Simple Knowledge Organization System (SKOS), Creative Commons and Schema.org.</dct:description>
+    <dct:publisher xml:lang="en-US">University of Washington</dct:publisher>
+    <dct:contributor xml:lang="en-US">D2L</dct:contributor>
+    <dct:language xml:lang="en-US">English</dct:language>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-28</dct:issued>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-24</dct:modified>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-02</dct:modified>
   </rdf:Property>
   
 <!-- ====================================================== -->
@@ -34,7 +34,7 @@
     <rdfs:comment xml:lang="en-US">A Competency Map can be viewed as an identified graph that aggregates two or more competency statements (asn:statement) and the relationships asserted among them.</rdfs:comment>
     <rdfs:label xml:lang="en-US">CompetencyMap</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
-    <dc:description>A Competency Map is a profile that borrows statements (asn:Statement) from two or more standard documents (asn:StandardDocument). A Competency Map does not define new statements.</dc:description>
+    <dc:description>A Competency Map is a profile that borrows statements (asn:Statement) from two or more standard documents (asn:StandardDocument).A Competency Map may or may not define new statements in its own namespace.</dc:description>
   </rdfs:Class>
 
   <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/CorrelationResource">
