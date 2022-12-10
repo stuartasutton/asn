@@ -1,5 +1,5 @@
 {
-	"@context": "https://github.com/stuartasutton/asn/blob/master/asnContext.jsonld",
+	"@context": "http://achievementstandards.org/ASN/schema/core/asnContext.jsonld",
 	"@graph": [
         {
             "@id": "https://github.com/stuartasutton/asn/blob/master/ASN_Profile.jsonld",
@@ -14,7 +14,7 @@
             "dc:description": {"en-US": "The Achievement Standards Network Classes and Properties (i.e., terms) provides URIs and definitions for all of the terms defined in the ASN namespace (http://purl.org/ASN/schema/core/)."},
             "dc:language": {"en-US": "English"},
             "dc:title": {"en-US": "The Achievement Standards Network Classes and Properties (Terms)"},
-            "dcterms:issued": "2022-11-18"
+            "dcterms:issued": "2022-12-10"
         },
         {
             "@id": "asn:CorrelationResource",
