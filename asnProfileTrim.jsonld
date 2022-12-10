@@ -17,6 +17,14 @@
             "dcterms:issued": "2022-12-10"
         },
         {
+            "@id": "asn:CompetencyMap",
+            "@type": "rdfs:Class",
+            "skos:scopeNote": {"en-US": "A Competency Map is a profile that borrows statements (asn:Statement) from two or more standard documents (asn:StandardDocument). A Competency Map may or may not define new statements in its own namespace for use in the map."},
+            "rdfs:comment": {"en-US": "A Competency Map can be viewed as an identified graph that aggregates two or more competency statements (asn:Statement) and the relationships asserted among them."},
+            "rdfs:isDefinedBy": "asn:",
+            "rdfs:label": {"en-US": "Competency Map"}
+        },
+        {
             "@id": "asn:CriterionLevel",
             "@type": "rdfs:Class",
             "rdfs:comment": {"en-US": "Resource identifying one or more benchmarks that must be met to achieve a performance task."},
