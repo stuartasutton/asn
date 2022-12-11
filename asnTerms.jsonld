@@ -245,10 +245,7 @@
             "rdfs:domain": "asn:StandardDocument",
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Assessment Rubric"},
-            "rdfs:range": [
-                "asn:Rubric",
-                "asn:RubricCriterion"
-            ]
+            "rdfs:range": "asn:Rubric"
         },
         {
             "@id": "asn:authorityStatus",
