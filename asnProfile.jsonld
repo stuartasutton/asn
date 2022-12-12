@@ -1,8 +1,8 @@
 {
-	"@context": "https://github.com/stuartasutton/asn/blob/master/asnContext.jsonld",
+	"@context": "http://achievementstandards.org/ASN/schema/core/asnContext.jsonld",
 	"@graph": [
         {
-            "@id": "https://github.com/stuartasutton/asn/blob/master/ASN_Profile.jsonld",
+            "@id": "http://achievementstandards.org/ASN/schema/core/asnProfile.jsonld",
             "dc:creator": [
                 {"en-US": "Informnation School of the University of Washington (Seattle)"},
                 {"en-US": "JES & Co"}
@@ -242,19 +242,17 @@
         {
             "@id": "asn:assessmentRubric",
             "@type": "rdfs:Property",
-            "rdfs:comment": {"en-US": "Explicit set of criteria used for assessing an articulated competency or set of competencies."},
+            "rdfs:comment": {"en-US": "Related resource providing guidance in evaluating the quality and level of person's responses or actions based on an explicit set of criteria."},
             "rdfs:domain": "asn:StandardDocument",
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Assessment Rubric"},
-            "rdfs:range": [
-                "asn:Rubric",
-                "asn:RubricCriterion"
-            ]
+            "rdfs:range": "asn:Rubric"
         },
         {
             "@id": "cc:attributionName",
             "@type": "rdfs:Property",
-            "rdfs:comment": {"en-US": "The name the creator of a Work would like used when attributing re-use. In this profile, the attribution name is of the name of the owner, publisher or egistry to which attribution is owed."},
+            "rdfs:comment": {"en-US": "The name the creator of a Work would like used when attributing re-use."},
+            "dct:description": {"en-US": "Frequently used provide attribution to the creator of the data representation of a standards document."},
             "rdfs:domain": "asn:RightsAndAttribution",
             "rdfs:isDefinedBy": "cc:",
             "rdfs:label": {"en-US": "Attribution Name"},
@@ -273,6 +271,7 @@
             "@id": "loc:aut",
             "@type": "rdf:Property",
             "rdfs:comment": {"en-US": "A person, family, or organization responsible for creating a work"},
+            "dct:description": {"en-US": "In ASN, the author property should be used only where individual people have been identified as authors."} ,
             "rdfs:domain": "asn:StandardDocument",
             "rdfs:isDefinedBy": "loc:",
             "rdfs:label": {"en-US": "Author"},
@@ -303,6 +302,7 @@
             "@type": "rdf:Property",
             "rdfs:label": {"en-US": "Broader"},
             "rdfs:comment": {"en-US": "Relates a concept to a concept that is more general in meaning."},
+            "dct:description": "Broader concepts are typically rendered as parents in a concept hierarchy (tree).",
             "rdfs:domain": "skos:Concept",
             "rdfs:range": "skos:Concept",
             "rdfs:isDefinedBy": "skos:"
@@ -382,7 +382,7 @@
             "rdfs:comment": {"en-US": "Date of creation of the resource."},
             "rdfs:domain": "asn:StandardDocument",
             "rdfs:isDefinedBy": "dcterms:",
-            "rdfs:label": {"en-US": "Created"},
+            "rdfs:label": {"en-US": "Date Created"},
             "rdfs:range": "rdfs:Literal"
         },
         {
