@@ -2,7 +2,7 @@
 	"@context": "http://achievementstandards.org/ASN/schema/core/asnContext.jsonld",
 	"@graph": [
         {
-            "@id": "https://github.com/stuartasutton/asn/blob/master/ASN_Profile.jsonld",
+            "@id": "http://achievementstandards.org/ASN/schema/core/asnTerms.jsonld",
             "dc:creator": [
                 {"en-US": "Informnation School of the University of Washington (Seattle)"},
                 {"en-US": "JES & Co"}
@@ -217,7 +217,6 @@
             "rdfs:range": "xsd:anyURI",
             "rdfs:subPropertyOf": "dcterms:identifier"
         },
-        
         {
             "@id": "asn:altStatementNotation",
             "@type": "rdf:Property",
@@ -241,7 +240,7 @@
         {
             "@id": "asn:assessmentRubric",
             "@type": "rdfs:Property",
-            "rdfs:comment": {"en-US": "Explicit set of criteria used for assessing an articulated competency or set of competencies."},
+            "rdfs:comment": {"en-US": "Related resource providing guidance in evaluating the quality and level of person's responses or actions based on an explicit set of criteria.."},
             "rdfs:domain": "asn:StandardDocument",
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Assessment Rubric"},
