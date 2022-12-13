@@ -206,7 +206,7 @@
             ]
         },
         {
-            "@id": "asn:alternativeIdentifier",
+            "@id": "asn:altIdentifier",
             "@type": "rdf:Property",
             "rdfs:comment": {"en-US": "An alternative URI by which the resource is identified."},
             "rdfs:domain": [ 
@@ -215,10 +215,21 @@
             ],
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Alternative Identifier"},
-            "rdfs:range": "xsd:anyURI",
+            "rdfs:range": "rdfs:Resource",
             "rdfs:subPropertyOf": "dcterms:identifier"
         },
-        
+        {
+            "@id": "asn:altLabel",
+            "@type": "rdf:Property",
+            "rdfs:comment": {"en-US": "An alternative lexical label for a resource."},
+            "rdfs:domain": [ 
+                "asn:Statement",
+                "asn:StandardDocument"
+            ],
+            "rdfs:isDefinedBy": "asn:",
+            "rdfs:label": {"en-US": "Alternative Label"},
+            "rdfs:range": "rdfs:Literal"
+        },        
         {
             "@id": "asn:altStatementNotation",
             "@type": "rdf:Property",
@@ -483,7 +494,7 @@
             "rdfs:domain": "asn:StandardDocument",
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Export Version"},
-            "rdfs:range": "xsd:anyURI"
+            "rdfs:range": "rdfs:Resource"
         },
         {
             "@id": "asn:hasChild",
@@ -530,10 +541,10 @@
             "@type": "rdf:Property",
             "skos:scopeNote": {"en-US": "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."},
             "rdfs:comment": {"en-US": "A related resource that is included either physically or logically in the described resource."},
-            "rdfs:domain": "xsd:anyURI",
+            "rdfs:domain": "rdfs:Resource",
             "rdfs:isDefinedBy": "dcterms:",
             "rdfs:label": {"en-US": "Has Part"},
-            "rdfs:range": "xsd:anyURI"
+            "rdfs:range": "rdfs:Resource"
         },
         {
             "@id": "asn:hasProgressionLevel",
@@ -576,10 +587,10 @@
             "@type": "rdf:Property",
             "skos:scopeNote": {"en-US": "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Is Version Of."},
             "rdfs:comment": {"en-US": "A related resource that is a version, edition, or adaptation of the described resource."},
-            "rdfs:domain": "xsd:anyURI",
+            "rdfs:domain": "rdfs:Resource",
             "rdfs:isDefinedBy": "dcterms:",
             "rdfs:label": {"en-US": "Has Version"},
-            "rdfs:range": "xsd:anyURI"
+            "rdfs:range": "rdfs:Resource"
         },
         {
             "@id": "asn:indexingStatus",
@@ -591,24 +602,54 @@
             "rdfs:range": "xsd:boolean"
         },
         {
+            "@id": "skos:inScheme",
+            "@type": "rdf:Property",
+            "rdfs:comment": {"en-US": "Relates a resource (for example a concept) to a concept scheme in which it is included."},
+            "rdfs:domain": "skos:Concept",
+            "rdfs:isDefinedBy": "skos:",
+            "rdfs:label": {"en-US": "In Scheme"},
+            "rdfs:range": "skos:ConceptScheme"
+        },
+        {
+            "@id": "asn:indexingStatus",
+            "@type": "rdf:Property",
+            "rdfs:comment": {"en-US": "The status of the statement denoting whether correlators should or should not assign the statement during correlation--Values=\"Yes\"/\"No\"."},
+            "rdfs:domain": "asn:Statement",
+            "rdfs:isDefinedBy": "asn:",
+            "rdfs:label": {"en-US": "Indexing Status"},
+            "rdfs:range": "xsd:boolean"
+        },
+        {
+            "@id": "asn:isChildOf",
+            "@type": "rdf:Property",
+            "rdfs:comment": {"en-US": "The statement being described is lower in some arbitrary hierarchy than the statement identified in the asn:isChildOf property. The statement identified is a parent of the statement being described."},
+            "rdfs:domain": "asn:Statement",
+            "rdfs:isDefinedBy": "asn:",
+            "rdfs:label": {"en-US": "Is Child Of"},
+            "rdfs:range": [
+                "asn:StandardDocument",
+                "asn:Statement"
+            ]
+        },
+        {
             "@id": "dcterms:isPartOf",
             "@type": "rdf:Property",
             "skos:scopeNote": {"en-US": "This property is intended to be used with non-literal values. This property is an inverse property of Has Part."},
             "rdfs:comment": {"en-US": "A related resource in which the described resource is physically or logically included."},
-            "rdfs:domain": "xsd:anyURI",
+            "rdfs:domain": "rdfs:Resource",
             "rdfs:isDefinedBy": "dcterms:",
             "rdfs:label": {"en-US": "Is Part Of"},
-            "rdfs:range": "xsd:anyURI"
+            "rdfs:range": "rdfs:Resource"
         },
         {
             "@id": "dcterms:isVersionOf",
             "@type": "rdf:Property",
             "skos:scopeNote": {"en-US": "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Has Version."},
             "rdfs:comment": {"en-US": "A related resource of which the described resource is a version, edition, or adaptation."},
-            "rdfs:domain": "xsd:anyURI",
+            "rdfs:domain": "rdfs:Resource",
             "rdfs:isDefinedBy": "dcterms:",
             "rdfs:label": {"en-US": "Is Version Of"},
-            "rdfs:range": "xsd:anyURI"
+            "rdfs:range": "rdfs:Resource"
         },
         {
             "@id": "asn:jurisdiction",
@@ -943,15 +984,6 @@
             "rdfs:isDefinedBy": "dcterms:",
             "rdfs:label": {"en-US": "Spatial"},
             "rdfs:range": "dcterms:Location"
-        },
-        {
-            "@id": "asn:skillEmbodied",
-            "@type": "rdf:Property",
-            "rdfs:comment": {"en-US": "Cognitive, affective, psychomotor or other skill directly or indirectly embodied in the statement."},
-            "rdfs:domain": "asn:Statement",
-            "rdfs:isDefinedBy": "asn:",
-            "rdfs:label": {"en-US": "Skill Embodied"},
-            "rdfs:range": "asn:Statement"
         },
         {
             "@id": "asn:statementLabel",
