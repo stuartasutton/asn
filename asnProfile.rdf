@@ -186,7 +186,6 @@
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/StandardDocument"/>
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/Statement"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
   </rdf:Property>
 
   <rdf:Property rdf:about="http://purl.org/ASN/schema/core/altStatementNotation">
@@ -257,6 +256,23 @@
     <vann:usageNote xml:lang="en-US">Can have one or more per CriterionLevel.</vann:usageNote>
     <rdfs:label xml:lang="en-US">Benchmark</rdfs:label>
     <owl:equivalentProperty rdf:resource="https://ceds.ed.gov/CEDSElementDetails.aspx?TermId=14443"/>
+  </rdf:Property>
+  
+  <rdf:Property rdf:about="http://www.w3.org/2004/02/skos/core#broader"> 
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment xml:lang="en-US">Relates a concept to a concept that is more general in meaning.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <vann:usageNote xml:lang="en-US">Broader concepts are typically rendered as parents in a concept hierarchy (tree).</vann:usageNote>
+    <rdfs:label xml:lang="en-US">Broader</rdfs:label>
+  </rdf:Property>
+  
+  <rdf:Property rdf:about="http://purl.org/ASN/schema/core/broadAlignment">
+    <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/Statement"/>
+    <rdfs:label>Broad Alignment</rdfs:label>
+    <rdfs:comment>The target competency covers all of the relevant concepts in the competency being described as well as relevant concepts not found in the competency being described.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
+    <rdfs:range rdf:resource="http://purl.org/ASN/schema/core/Statement"/>
   </rdf:Property>
   
   <rdf:Property rdf:about="http://purl.org/ASN/schema/core/broadAlignment">
@@ -378,6 +394,16 @@
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
     <rdfs:label>Derived From</rdfs:label>
     <dc:description xml:lang="en-US">The derivedFrom property is used by 3rd parties only in derived statements and must appear in conjunction with a value of "Derived" in the statement's authorityStatus property.</dc:description>
+  </rdf:Property>
+  
+  <rdf:Property rdf:about="http://purl.org/dc/terms/description">
+    <rdfs:comment>An account of the resource.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/Statement"/>
+    <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/StandardDocument"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdfs:label>Description</rdfs:label>
+    <dc:description xml:lang="en-US">In this ASN profile, the description property is used to provide the actual text of the competency (Statement) and to provide an abstract of the competency framework (StandardDocument).</dc:description>
   </rdf:Property>
 
   <rdf:Property rdf:about="http://purl.org/dc/terms/description">
