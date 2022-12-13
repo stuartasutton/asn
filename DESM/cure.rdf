@@ -16,14 +16,6 @@
         <rdfs:label xml:lang="en-US">Resource</rdfs:label>
     </rdfs:Class>
     
-    <rdf:Property rdf:about="http://purl.org/dc/terms/created">
-        <rdfs:comment>Date of creation of the resource.</rdfs:comment>
-        <rdfs:label>Date Created</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/StandardDocument"/>
-    </rdf:Property>
-    
     <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/StandardDocument">
         <rdfs:label xml:lang="en-US">Standard Document</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
@@ -35,6 +27,14 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
         <rdfs:comment xml:lang="en-US">An assertion representing an expectation of what students should know, value, and be able to do at a target age or age range.</rdfs:comment>
     </rdfs:Class>
+    
+    <rdf:Property rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:comment>Date of creation of the resource.</rdfs:comment>
+        <rdfs:label>Date Created</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/StandardDocument"/>
+    </rdf:Property>
     
     <rdf:Property rdf:about="http://purl.org/dc/terms/hasPart">
         <dc:description xml:lang="en-US">This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of.</dc:description>
