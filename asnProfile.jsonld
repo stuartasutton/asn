@@ -810,7 +810,7 @@
             "rdfs:label": {"en-US": "Preferred Label"},
             "rdfs:comment": {"en-US": "The preferred lexical label for a resource, in a given language."},
             "rdfs:domain": "skos:Concept",
-            "rdfs:range": "rdfs:langString",
+            "rdfs:range": "rdf:langString",
             "rdfs:isDefinedBy": "skos:"
         },
         {
