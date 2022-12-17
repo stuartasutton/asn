@@ -11,18 +11,16 @@
     xmlns:vann="http://purl.org/vocab/vann/"
     >
     
-    <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/DerivedStandardDocument">
-        <rdfs:label xml:lang="en-US">Derived Standard Document</rdfs:label>
-        <rdfs:comment xml:lang="en-US">A collection of statements representing an expectation of what students should know, value, and be able to do at a target age or age range that are substantially defined by a different jurisdiction.</rdfs:comment>
+    <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/StandardDocument">
+        <rdfs:label xml:lang="en-US">Standard Document</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ASN/schema/core/StandardDocument"/>
+        <rdfs:comment xml:lang="en-US">A collection of statements representing an expectation of what students should know, value, and be able to do at a target age or age range.</rdfs:comment>
     </rdfs:Class>
     
-    <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/DerivedStatement">
-        <rdfs:label xml:lang="en-US">Derived Statement</rdfs:label>
-        <rdfs:comment xml:lang="en-US">An assertion representing an expectation of what students should know, value, and be able to do at a target age or age range that is derived from a statement defined by a different jurisdiction.</rdfs:comment>
+    <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/Statement">
+        <rdfs:label xml:lang="en-US">Statement</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ASN/schema/core/Statement"/>
+        <rdfs:comment xml:lang="en-US">An assertion representing an expectation of what students should know, value, and be able to do at a target age or age range.</rdfs:comment>
     </rdfs:Class>
     
     <rdf:Property rdf:about="http://purl.org/ASN/schema/core/statementLabel">
