@@ -35,7 +35,7 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
         <rdfs:comment>The statement being described is lower in some arbitrary hierarchy than the statement identified in the asn:isChildOf property. The statement identified is a parent of the statement being described.</rdfs:comment>
         <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/Statement"/>
-        <rdfs:label>Statement Label</rdfs:label>
+        <rdfs:label>Is Child Of</rdfs:label>
         <rdfs:range rdf:resource= "http://purl.org/ASN/schema/core/StandardDocument"/>
         <rdfs:range rdf:resource= "http://purl.org/ASN/schema/core/Statement"/>
     </rdf:Property>
