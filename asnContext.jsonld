@@ -60,7 +60,7 @@
         "hasScope": {"@id": "asn:hasScope", "@container": "@language"},
         "hasTopConcept": {"@id": "skos:hasTopConcept", "@type": "@id"},
         "hasVersion": {"@id": "dcterms:hasVersion", "@type": "@id"},
-        "identifier": {"@id": "dc:identifier", "@type": "rdfs:Literal"},        
+        "identifier": {"@id": "asn:identifier", "@type": "rdfs:Literal"},        
         "indexingStatus": {"@id": "asn:indexingStatus", "@type": "xsd:boolean"},
         "inScheme": {"@id": "skos:inScheme", "@type": "@id"},
         "isChildOf": {"@id": "asn:isChildOf", "@type": "@id"},
