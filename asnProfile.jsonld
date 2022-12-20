@@ -295,18 +295,6 @@
             "owl:equivalentProperty": "https://ceds.ed.gov/CEDSElementDetails.aspx?TermId=14443"
         },
         {
-            "@id": "skos:broader",
-            "@type": "rdf:Property",
-            "rdfs:label": {"en-US": "Broader"},
-            "rdfs:comment": {"en-US": "Relates a concept to a concept that is more general in meaning."},
-            "vann:usageNote": {"en-US": "Broader concepts are typically rendered as parents in a concept hierarchy (tree)."},
-            "skos:scopeNote": "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources." ,
-            "rdfs:domain": "skos:Concept",
-            "rdfs:range": "skos:Concept",
-            "owl:inverseOf": "skos:narrower",
-            "rdfs:isDefinedBy": "skos:"
-        },
-        {
             "@id": "asn:broadAlignment",
             "@type": "rdf:Property",
             "rdfs:comment": {"en-US": "The target competency covers all of the relevant concepts in the competency being described as well as relevant concepts not found in the competency being described."},
@@ -326,9 +314,21 @@
             "rdfs:subPropertyOf": "dcterms:conformsTo"
         },
         {
+            "@id": "skos:broader",
+            "@type": "rdf:Property",
+            "rdfs:label": {"en-US": "Broader"},
+            "rdfs:comment": {"en-US": "Relates a concept to a concept that is more general in meaning."},
+            "vann:usageNote": {"en-US": "Broader concepts are typically rendered as parents in a concept hierarchy (tree)."},
+            "skos:scopeNote": "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources." ,
+            "rdfs:domain": "skos:Concept",
+            "rdfs:range": "skos:Concept",
+            "owl:inverseOf": "skos:narrower",
+            "rdfs:isDefinedBy": "skos:"
+        },
+        {
             "@id": "asn:comment",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "Use comment when the text provides useful context for the statement."},
+            "dcterms:description": {"en-US": "Use comment when the text provides useful context for the statement."},
             "rdfs:comment": {"en-US": "Supplemental text provided by the promulgating body that clarifies the nature, scope or use of the statement being described."},
             "rdfs:domain": "asn:Statement",
             "rdfs:isDefinedBy": "asn:",
@@ -338,7 +338,7 @@
         {
             "@id": "asn:complexityLevel",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "The value of asn:complexityLevel should be a concept IRI of a member of the class asn:ProficiencyScale."},
+            "dcterms:description": {"en-US": "The value of asn:complexityLevel should be a concept IRI of a member of the class asn:ProficiencyScale."},
             "rdfs:comment": {"en-US": "The expected performance level of a learner or professional as defined by a competency."},
             "rdfs:domain": "asn:Statement",
             "rdfs:isDefinedBy": "asn:",
@@ -372,8 +372,7 @@
             "rdfs:domain": "asn:Statement",
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Concept Term"},
-            "rdfs:range": "skos:Concept",
-            "rdfs:subPropertyOf": "dc:subject"
+            "rdfs:range": "skos:Concept"
         },
         {
             "@id": "dcterms:created",
