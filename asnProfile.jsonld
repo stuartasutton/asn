@@ -161,7 +161,7 @@
         {
             "@id": "asn:alignFrom",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "An alignment is an assertion of some degree of eqiuvalency between the subject and the object of the assertion."},
+            "dcterms:description": {"en-US": "An alignment is an assertion of some degree of eqiuvalency between the subject and the object of the assertion."},
             "rdfs:comment": {"en-US":"A standards document or statement from which the statement or document being described is aligned."},
             "rdfs:domain": [
                 "asn:Statement", 
@@ -177,7 +177,7 @@
         {
             "@id": "asn:alignTo",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "An alignment is an assertion of some degree of eqiuvalency between the subject and the object of the assertion."},
+            "dcterms:description": {"en-US": "An alignment is an assertion of some degree of eqiuvalency between the subject and the object of the assertion."},
             "rdfs:comment": {"en-US": "A standards document or statement to which the statement or document being described is aligned."},
             "rdfs:domain": [
                 "asn:Statement",
@@ -258,7 +258,7 @@
         {
             "@id": "cc:attributionURL",
             "@type": "rdfs:Property",
-            "rdfs:comment": {"en-US": "The URL the creator of a Work would like used when attributing re-use.In this profile, the attribution URL is of the URL the owner, publisher or registry to which attribution is owed would like used."},
+            "rdfs:comment": {"en-US": "The URL the creator of a Work would like used when attributing re-use."},
             "rdfs:domain": "asn:RightsAndAttribution",
             "rdfs:isDefinedBy": "cc:",
             "rdfs:label": {"en-US": "Attribution URL"},
