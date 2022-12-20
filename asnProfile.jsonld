@@ -21,7 +21,7 @@
             "@id": "rdfs:Resource",
             "@type": "rdfs:Class",
             "rdfs:label": {"en-US": "Resource"},
-            "rdfs:Comment":  "Class of anything that can be identified with a Universal Resource Identifier (URI).",
+            "rdfs:Comment":  {"en-US": "Class of anything that can be identified with a Universal Resource Identifier (URI)."},
             "rdfs:isDefinedBy": "rdfs:"
             
         },
@@ -36,7 +36,7 @@
         {
             "@id": "asn:CorrelationResource",
             "@type": "rdfs:Class",
-            "vann:usageNote": "The CorrelationResource is an entity intended to provide a rich description of a mapping (correlation) between a LearningResource and a Statement when a binary assertion of a relationship is insufficient.",
+            "vann:usageNote": {"en-US": "The CorrelationResource is an entity intended to provide a rich description of a mapping (correlation) between a LearningResource and a Statement when a binary assertion of a relationship is insufficient."},
             "rdfs:comment": {"en-US": "A resource that describes the mapping between a learning resource and a node in a learning outcomes framework."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Correlation Resource"}
@@ -96,7 +96,7 @@
         {
             "@id": "asn:ProficiencyScale",
             "@type": "rdfs:Class",
-            "skos:scopeNote": {"en-US": "Proficiency scales define levels of performance (what a person does) as distinct from knowledge of specific information (what a person knows) and outline tasks a person can manage and the skills necessary to progressively accomplish explicit competencies at increasing levels of complexity. Proficiency scales: (1) assist in making judgments about the kinds of tasks related to a competency that a person is able to perform; and (2) to compare the abilities of different persons with regard to achievement of those competencies at different levels."},
+            "dcterms:description": {"en-US": "Proficiency scales define levels of performance (what a person does) as distinct from knowledge of specific information (what a person knows) and outline tasks a person can manage and the skills necessary to progressively accomplish explicit competencies at increasing levels of complexity. Proficiency scales: (1) assist in making judgments about the kinds of tasks related to a competency that a person is able to perform; and (2) to compare the abilities of different persons with regard to achievement of those competencies at different levels."},
             "rdfs:comment": {"en-US": "The class of all structured concept schemes identifying discrete levels of expertise and performance mastery required either by a competency or to be achieved by a learner."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Proficiency Scale"}
@@ -119,7 +119,7 @@
             "@id": "asn:RightsAndAttribution",
             "@type": "rdfs:Class",
             "rdfs:comment": {"en-US": "Resource providing information about the rights and attribution requirements of the entity making the metadata description available."},
-            "skos:scopeNote": {"en-US": "These rights are distinct from any rights held in the content of the competency framework or competencies described."},
+            "dcterms:description": {"en-US": "These rights are distinct from any rights held in the content of the competency framework or competencies described."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Rights and Attribution"}
         },
@@ -409,7 +409,7 @@
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Cross-subject Reference"},
             "rdfs:range": "asn:Statement",
-            "rdfs:subPropertyOf": "dc:references"
+            "rdfs:subPropertyOf": "dcterms:references"
         },
         {
             "@id": "dcterms:dateCopyrighted",
@@ -418,12 +418,12 @@
             "rdfs:domain": "asn:StandardDocument",
             "rdfs:isDefinedBy": "dcterms:",
             "rdfs:label": {"en-US": "Date Copyrighted"},
-            "rdfs:range": "xsd:date"
+            "rdfs:range": "dcterms:W3CDTF"
         },
         {
             "@id": "asn:derivedFrom",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "The derivedFrom property is used by 3rd parties only in derived statements and must appear in conjunction with a value of \"Derived\" in the statement's authorityStatus property."},
+            "dcterms:description": {"en-US": "The derivedFrom property is used by 3rd parties only in derived statements and must appear in conjunction with a value of \"Derived\" in the statement's authorityStatus property."},
             "rdfs:comment": {"en-US": "The URI of a statement from which the derived statement being described has been derived."},
             "rdfs:domain": "asn:Statement",
             "rdfs:isDefinedBy": "asn:",
@@ -433,7 +433,7 @@
         {
             "@id": "dcterms:description",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "In this ASN profile, the description property is used to provide the actual text of the competency (Statement) and to provide an abstract of the competency framework (StandardDocument)."},
+            "dcterms:description": {"en-US": "In this ASN profile, the description property is used to provide the actual text of the competency (Statement) and to provide an abstract of the competency framework (StandardDocument)."},
             "rdfs:comment": {"en-US": "An account of the resource."},
             "rdfs:domain": [
                 "asn:Statement",
@@ -524,7 +524,7 @@
         {
             "@id": "dcterms:hasPart",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."},
+            "dcterms:description": {"en-US": "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."},
             "rdfs:comment": {"en-US": "A related resource that is included either physically or logically in the described resource."},
             "rdfs:domain": "rdfs:Resource",
             "rdfs:isDefinedBy": "dcterms:",
@@ -570,7 +570,7 @@
         {
             "@id": "dcterms:hasVersion",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Is Version Of."},
+            "dcterms:description": {"en-US": "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Is Version Of."},
             "rdfs:comment": {"en-US": "A related resource that is a version, edition, or adaptation of the described resource."},
             "rdfs:domain": "rdfs:Resource",
             "rdfs:isDefinedBy": "dcterms:",
@@ -619,7 +619,7 @@
         {
             "@id": "dcterms:isPartOf",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "This property is intended to be used with non-literal values. This property is an inverse property of Has Part."},
+            "dcterms:description": {"en-US": "This property is intended to be used with non-literal values. This property is an inverse property of Has Part."},
             "rdfs:comment": {"en-US": "A related resource in which the described resource is physically or logically included."},
             "rdfs:domain": "rdfs:Resource",
             "rdfs:isDefinedBy": "dcterms:",
@@ -629,7 +629,7 @@
         {
             "@id": "dcterms:isVersionOf",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Has Version."},
+            "dcterms:description": {"en-US": "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Has Version."},
             "rdfs:comment": {"en-US": "A related resource of which the described resource is a version, edition, or adaptation."},
             "rdfs:domain": "rdfs:Resource",
             "rdfs:isDefinedBy": "dcterms:",
@@ -639,7 +639,7 @@
         {
             "@id": "asn:jurisdiction",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "The URI of the jurisdiction from the ASNJurisdiction controlled vocabulary."},
+            "dcterms:description": {"en-US": "The URI of the jurisdiction from the ASNJurisdiction controlled vocabulary."},
             "rdfs:comment": {"en-US": "The jurisdiction or domain of the standard's application--e.g., California, Nebraska, etc."},
             "rdfs:domain": "asn:StandardDocument",
             "rdfs:isDefinedBy": "asn:",
@@ -649,7 +649,7 @@
         {
             "@id": "dc:language",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [IETF-BCP47] language tag"},
+            "dcterms:description": {"en-US": "Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [IETF-BCP47] language tag"},
             "rdfs:comment": {"en-US": "A language of the resource."},
             "rdfs:domain": [
                 "asn:StandardDocument",
@@ -671,7 +671,7 @@
         {
             "@id": "dcterms:license",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided."},
+            "dcterms:description": {"en-US": "Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided."},
             "rdfs:comment": {"en-US": "A legal document giving official permission to do something with the resource."},
             "rdfs:domain": "asn:StandardDocument",
             "rdfs:isDefinedBy": "dcterms:",
@@ -830,7 +830,7 @@
         {
             "@id": "asn:proficiencyLevel",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "The value of asn:proficiencyLevel should be a concept IRI of a member of the class asn:ProficiencyScale."},
+            "dcterms:description": {"en-US": "The value of asn:proficiencyLevel should be a concept IRI of a member of the class asn:ProficiencyScale."},
             "schema:domainIncludes": [
                 "asn:LearningResource",
                 "asn:Statement"
@@ -852,7 +852,7 @@
         {
             "@id": "dc:publisher",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."},
+            "dcterms:description": {"en-US": "Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."},
             "rdfs:comment": {"en-US": "An entity responsible for making the resource available."},
             "rdfs:domain": "asn:StandardDocument",
             "rdfs:isDefinedBy": "dc:",
@@ -881,7 +881,7 @@
         {
             "@id": "dcterms:rights",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided."},
+            "dcterms:description": {"en-US": "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided."},
             "rdfs:comment": {"en-US": "Information about rights held in and over the resource."},
             "rdfs:domain": [
                 "asn:RightsAndAttribution",
@@ -894,7 +894,7 @@
         {
             "@id": "dcterms:rightsHolder",
             "@type": "rdf:Property",
-            "skos:scopeNote": {"en-US": "Recommended practice is to refer to the rights holder with a URI. If this is not possible or feasible, a literal value that identifies the rights holder may be provided."},
+            "dcterms:description": {"en-US": "Recommended practice is to refer to the rights holder with a URI. If this is not possible or feasible, a literal value that identifies the rights holder may be provided."},
             "rdfs:comment": {"en-US": "A person or organization owning or managing rights over the resource."},
             "rdfs:domain": [
                 "asn:StandardDocument",
