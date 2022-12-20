@@ -97,10 +97,7 @@
             "@id": "asn:ProficiencyScale",
             "@type": "rdfs:Class",
             "skos:scopeNote": {"en-US": "Proficiency scales define levels of performance (what a person does) as distinct from knowledge of specific information (what a person knows) and outline tasks a person can manage and the skills necessary to progressively accomplish explicit competencies at increasing levels of complexity. Proficiency scales: (1) assist in making judgments about the kinds of tasks related to a competency that a person is able to perform; and (2) to compare the abilities of different persons with regard to achievement of those competencies at different levels."},
-            "rdfs:comment": [
-                {"en-US": "The class of all structured concept schemes identifying discrete levels of expertise and performance mastery required either by a competency or to be achieved by a learner."},
-                {"en-US": "Model of identifiable points along a developmental progression including increasing levels of competence, achievement or temporal position (e.g., \"Second Quarter\")."}
-            ],
+            "rdfs:comment": {"en-US": "The class of all structured concept schemes identifying discrete levels of expertise and performance mastery required either by a competency or to be achieved by a learner."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Proficiency Scale"}
         },
