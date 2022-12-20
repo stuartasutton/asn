@@ -34,6 +34,7 @@
   <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
     <rdfs:comment xml:lang="en-US">Class of anything that can be identified with a Universal Resource Identifier (URI).</rdfs:comment>
     <rdfs:label xml:lang="en-US">Resource</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
   </rdfs:Class>
 
   <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/CompetencyMap">
