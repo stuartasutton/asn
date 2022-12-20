@@ -89,7 +89,7 @@
         {
             "@id": "asn:LearningResource",
             "@type": "rdfs:Class",
-            "rdfs:comment": {"en-US": "A resource that is used as part of an Educational Activity(e.g. a textbook) or that describes (e.g. a lesson plan) or records the Educational Activity (e.g. an audio- or video-recording of a lesson)."},
+            "rdfs:comment": {"en-US": "A resource that is used as part of an Educational Activity (e.g. a textbook) or that describes (e.g. a lesson plan) or records the Educational Activity (e.g. an audio- or video-recording of a lesson)."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Learning Resource"}
         },
