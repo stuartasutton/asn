@@ -11,7 +11,7 @@
             "dcterms:rights": "https://creativecommons.org/licenses/by/4.0/",
             "dc:contributor": {"en-US": "Desire2Learn (D2L)"},
             "dc:publisher": {"en-US": "Informnation School of the University of Washington (Seattle)"},
-            "dc:description": {"en-US": "The Achievement Standards Network Application Profile (ASN-AP) provides URIs and definitions for all of the terms used in ASN metadata instances including properties from the ASN namespace as well as properties borrowed from other namespaces such as those of the Dublin Core Metadata Initiatve (DCMI), Simple Knowledge Organization System (SKOS), Creative Commons and Schema.org."},
+            "dct:description": {"en-US": "The Achievement Standards Network Application Profile (ASN-AP) provides URIs and definitions for all of the terms used in ASN metadata instances including properties from the ASN namespace as well as properties borrowed from other namespaces such as those of the Dublin Core Metadata Initiatve (DCMI), Simple Knowledge Organization System (SKOS), Creative Commons and Schema.org."},
             "dc:language": {"en-US": "English"},
             "dc:title": {"en-US": "The Achievement Standards Network Application Profile (ASN-AP)"},
             "dcterms:issued": "2020-11-28",
@@ -28,7 +28,7 @@
         {
             "@id": "asn:CompetencyMap",
             "@type": "rdfs:Class",
-            "skos:scopeNote": {"en-US": "A Competency Map is a profile that borrows statements (asn:Statement) from two or more standard documents (asn:StandardDocument). A Competency Map may or may not define new statements in its own namespace."},
+            "vann:usageNote": {"en-US": "A Competency Map is a profile that borrows statements (asn:Statement) from two or more standard documents (asn:StandardDocument). A Competency Map may or may not define new statements in its own namespace."},
             "rdfs:comment": {"en-US": "A Competency Map can be viewed as an identified graph that aggregates two or more competency statements (asn:Statement) and the relationships asserted among them."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Competency Map"}
@@ -36,7 +36,7 @@
         {
             "@id": "asn:CorrelationResource",
             "@type": "rdfs:Class",
-            "skos:scopeNote": "The CorrelationResource is an entity intended to provide a rich description of a mapping (correlation) between a LearningResource and a Statement when a binary assertion of a relationship is insufficient.",
+            "vann:usageNote": "The CorrelationResource is an entity intended to provide a rich description of a mapping (correlation) between a LearningResource and a Statement when a binary assertion of a relationship is insufficient.",
             "rdfs:comment": {"en-US": "A resource that describes the mapping between a learning resource and a node in a learning outcomes framework."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Correlation Resource"}
@@ -74,7 +74,7 @@
         {
             "@id": "asn:EducationalFramework",
             "@type": "rdfs:Class",
-            "skos:scopeNote": {"en-US": "Similar to the class skos:ConceptScheme with an intended focus on education and training. Examples of educational frameworks include, but are not limited to, frameworks enumerating competencies, text complexity, proficiency scales, assessment rubrics of various forms, and specialized subject vocabularies."},
+            "vann:usageNote": {"en-US": "Similar to the class skos:ConceptScheme with an intended focus on education and training. Examples of educational frameworks include, but are not limited to, frameworks enumerating competencies, text complexity, proficiency scales, assessment rubrics of various forms, and specialized subject vocabularies."},
             "rdfs:comment": {"en-US": "The class of all structured sets of conceptual resources intentionally designed for use as value vocabulary terms in education and training contexts."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Educational Framework"}
@@ -91,7 +91,7 @@
             "@type": "rdfs:Class",
             "rdfs:comment": {"en-US": "A resource that is used as part of an Educational Activity (e.g. a textbook) or that describes (e.g. a lesson plan) or records the Educational Activity (e.g. an audio- or video-recording of a lesson)."},
             "rdfs:isDefinedBy": "asn:",
-            "rdfs:label": {"en-US": "Learning Resource"}
+            "rdfs:label": {"en-US": "Learning Resource"} 
         },
         {
             "@id": "asn:ProficiencyScale",
@@ -118,7 +118,8 @@
         {
             "@id": "asn:RightsAndAttribution",
             "@type": "rdfs:Class",
-            "rdfs:comment": {"en-US": "Resource providing information about the rights and attribution requirements of the entity making the metadata description available. These rights are distinct from any rights held in the content of the competency framework or competencies described. "},
+            "rdfs:comment": {"en-US": "Resource providing information about the rights and attribution requirements of the entity making the metadata description available."},
+            "skos:scopeNote": {"en-US": "These rights are distinct from any rights held in the content of the competency framework or competencies described."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Rights and Attribution"}
         },
@@ -130,16 +131,9 @@
             "rdfs:label": {"en-US": "Rubric"}
         },
         {
-            "@id": "asn:StatusScheme",
-            "@type": "rdfs:Class",
-            "rdfs:comment": {"en-US": "Controlled vocabularies of terms denoting the publication status of the standards document."},
-            "rdfs:isDefinedBy": "asn:",
-            "rdfs:label": {"en-US": "Status Encoding Schemes"}
-        },
-        {
             "@id": "asn:RubricCriterion",
             "@type": "rdfs:Class",
-            "rdfs:comment": {"en-US": "Resource identifying a criterion that must be met to demonstrate quality performance of a objective or task."},
+            "rdfs:comment": {"en-US": "Resource identifying a criterion that must be met to demonstrate quality performance of an objective or task."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Rubric Criterion"}
         },
@@ -157,7 +151,7 @@
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Statement"}
         },
-                {
+        {
             "@id": "asn:StatusScheme",
             "@type": "rdfs:Class",
             "rdfs:comment": {"en-US": "Controlled vocabularies of terms denoting the publication status of the standards document."},
@@ -305,9 +299,11 @@
             "@type": "rdf:Property",
             "rdfs:label": {"en-US": "Broader"},
             "rdfs:comment": {"en-US": "Relates a concept to a concept that is more general in meaning."},
-            "dct:description": "Broader concepts are typically rendered as parents in a concept hierarchy (tree).",
+            "vann:usageNote": {"en-US": "Broader concepts are typically rendered as parents in a concept hierarchy (tree)."},
+            "skos:scopeNote": "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources." ,
             "rdfs:domain": "skos:Concept",
             "rdfs:range": "skos:Concept",
+            "owl:inverseOf": "skos:narrower",
             "rdfs:isDefinedBy": "skos:"
         },
         {
@@ -500,7 +496,6 @@
         {
             "@id": "asn:hasCriterion",
             "@type": "rdfs:Property",
-            "skos:scopeNote": {"en-US": "Both Rubric Criterion and Criterion Category have an asn:sequence property to identify node order; however, json-ld encodings should use @list on the asn:hasCriterion and asn:hasLevel properties to maintain sequencing of RubricCriterion."},
             "rdfs:comment": {"en-US": "Rubric Criterion referenced by the Rubric that defining criterion to be met to demonstrate quality in execution in performance of a task or obtaining an objective."},
             "rdfs:domain": "asn:Rubric",
             "rdfs:isDefinedBy": "asn:",
@@ -520,7 +515,6 @@
         {
             "@id": "asn:hasLevel",
             "@type": "rdfs:Property",
-            "skos:scopeNote": {"en-US": "Both Rubric Criterion and Criterion Category have an asn:sequence property to identify node order; however, json-ld encodings should use @list on the hasCriterion and hasLevel properties to maintain such sequencing."},
             "rdfs:comment": {"en-US": "Resource description of a level of performance based on a Rubric Criterion."},
             "rdfs:domain": "asn:RubricCriterion",
             "rdfs:isDefinedBy": "asn:",
@@ -1004,7 +998,7 @@
             "rdfs:isDefinedBy": "dcterms:",
             "rdfs:label": {"en-US": "Subject"},
             "rdfs:range": "skos:Concept",
-            "skos:scopeNote": {"en-US": "Used in ASN to denote a subject area of the framework; e.g., \"science\", \"mathematics\", \"English\"."}
+            "vann:usageNote": {"en-US": "Used in ASN to denote a subject area of the framework; e.g., \"science\", \"mathematics\", \"English\"."}
         },
         {
             "@id": "dcterms:tableOfContents",
