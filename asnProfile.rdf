@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -16,15 +16,15 @@
 <!-- ====================================================== -->    
 
   <rdf:Property rdf:about="http://purl.org/ASN/schema/ap/">
-    <dct:title xml:lang="en-US">The Achievement Standards Network Application Profile (ASN-AP)</dct:title>
-    <dct:description xml:lang="en-US">The Achievement Standards Network Application Profile (ASN-AP) provides URIs and definitions for all of the terms used in ASN metadata instances including properties from the ASN namespace as well as properties borrowed from other namespaces such as those of the Dublin Core Metadata Initiatve (DCMI), Simple Knowledge Organization System (SKOS), Creative Commons and Schema.org.</dct:description>
-    <dct:publisher xml:lang="en-US">Information School of the University of Washington (Seattle)</dct:publisher>
-    <dct:contributor xml:lang="en-US">Desire2Learn (D2L)</dct:contributor>
-    <dct:language xml:lang="en-US">English</dct:language>
-    <dct:rights>https://creativecommons.org/licenses/by/4.0/</dct:rights>
-    <dct:rightsHolder xml:lang="en-US">University of Washington, Seattle</dct:rightsHolder>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-28</dct:issued>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-02</dct:modified>
+    <dc:title xml:lang="en-US">The Achievement Standards Network Application Profile (ASN-AP)</dc:title>
+    <dcterms:description xml:lang="en-US">The Achievement Standards Network Application Profile (ASN-AP) provides URIs and definitions for all of the terms used in ASN metadata instances including properties from the ASN namespace as well as properties borrowed from other namespaces such as those of the Dublin Core Metadata Initiatve (DCMI), Simple Knowledge Organization System (SKOS), Creative Commons and Schema.org.</dcterms:description>
+    <dcterms:publisher xml:lang="en-US">Information School of the University of Washington (Seattle)</dcterms:publisher>
+    <dcterms:contributor xml:lang="en-US">Desire2Learn (D2L)</dcterms:contributor>
+    <dcterms:language xml:lang="en-US">English</dcterms:language>
+    <dcterms:rights>https://creativecommons.org/licenses/by/4.0/</dcterms:rights>
+    <dcterms:rightsHolder xml:lang="en-US">University of Washington, Seattle</dcterms:rightsHolder>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-28</dcterms:issued>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-02</dcterms:modified>
   </rdf:Property>
   
 <!-- ====================================================== -->
@@ -41,14 +41,14 @@
     <rdfs:comment xml:lang="en-US">A Competency Map can be viewed as an identified graph that aggregates two or more competency statements (asn:statement) and the relationships asserted among them.</rdfs:comment>
     <rdfs:label xml:lang="en-US">CompetencyMap</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
-    <dc:description>A Competency Map is a profile that borrows statements (asn:Statement) from two or more standard documents (asn:StandardDocument).A Competency Map may or may not define new statements in its own namespace.</dc:description>
+    <dcterms:description>A Competency Map is a profile that borrows statements (asn:Statement) from two or more standard documents (asn:StandardDocument).A Competency Map may or may not define new statements in its own namespace.</dcterms:description>
   </rdfs:Class>
 
   <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/CorrelationResource">
     <rdfs:comment xml:lang="en-US">A resource that describes the mapping between a learning resource and a node in a learning outcomes framework.</rdfs:comment>
     <rdfs:label xml:lang="en-US">Correlation Resource</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
-    <dc:description>The CorrelationResource is an entity intended to provide a rich description of a mapping (correlation) between a LearningResource and a Statement when a binary assertion of a relationship is insufficient.</dc:description>
+    <dcterms:description>The CorrelationResource is an entity intended to provide a rich description of a mapping (correlation) between a LearningResource and a Statement when a binary assertion of a relationship is insufficient.</dcterms:description>
   </rdfs:Class>
   
   <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/CriterionCategory">
@@ -117,7 +117,8 @@
   
   <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/RightsAndAttribution">
     <rdfs:label xml:lang="en-US">Rights and Attribution</rdfs:label>
-    <rdfs:comment xml:lang="en-US">Resource providing information about the rights and attribution requirements of the entity making the metadata description available. These rights are distinct from any rights held in the content of the competency framework or competencies described. </rdfs:comment>
+    <rdfs:comment xml:lang="en-US">Resource providing information about the rights and attribution requirements of the entity making the metadata description available.</rdfs:comment>
+    <dc:description xml:lang="en-US">These rights are distinct from any rights held in the content of the competency framework or competencies described.</dc:description> 
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
   </rdfs:Class>
   
@@ -225,7 +226,7 @@
 
   <rdf:Property rdf:about="http://creativecommons.org/ns#attributionName">
     <rdfs:comment xml:lang="en-US">The name the creator of a Work would like used when attributing re-use. In this profile, the attribution name is of the name of the owner, publisher or registry to which attribution is owed.</rdfs:comment>
-    <dct:description xml:lang="en-US">Frequently used provide attribution to the creator of the data representation of a standards document.</dct:description>
+    <dcterms:description xml:lang="en-US">Frequently used provide attribution to the creator of the data representation of a standards document.</dcterms:description>
     <rdfs:isDefinedBy rdf:resource="http://creativecommons.org/ns#"/>
     <rdfs:label xml:lang="en-US">Attribution Name</rdfs:label>
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/RightsAndAttribution"/>
@@ -243,7 +244,7 @@
   <rdf:Property rdf:about="http://id.loc.gov/vocabulary/relators/aut">
     <rdfs:comment>A person, family, or organization responsible for creating a work.</rdfs:comment>
     <rdfs:label>Author</rdfs:label>
-    <dc:description>In ASN, the author property should be used only where individual people have been identified as authors.</dc:description>
+    <dcterms:description>In ASN, the author property should be used only where individual people have been identified as authors.</dcterms:description>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/StandardDocument"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
@@ -304,7 +305,7 @@
   <rdf:Property rdf:about="http://www.w3.org/2004/02/skos/core#broader">
     <rdfs:label>Broader</rdfs:label>
     <rdfs:comment>Relates a concept to a concept that is more general in meaning.</rdfs:comment>
-    <dct:description>Broader concepts are typically rendered as parents in a concept hierarchy (tree).</dct:description>
+    <dcterms:description>Broader concepts are typically rendered as parents in a concept hierarchy (tree).</dcterms:description>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -469,7 +470,6 @@
   </rdf:Property>
 
   <rdf:Property rdf:about="http://purl.org/ASN/schema/core/hasCriterion">
-    <vann:usageNote xml:lang="en-US">Both asn:RubricCriterion and CriterionCategory have an asn:sequence property to identify node order; however, json-ld encodings should use @list on the asn:hasCriterion and asn:hasLevel properties to maintain sequencing of RubricCriterion.</vann:usageNote>
     <rdfs:range rdf:resource="http://purl.org/ASN/schema/core/RubricCriterion"/>
     <rdfs:comment xml:lang="en-US">RubricCriterion referenced by the Rubric that defining criterion to be met to demonstrate quality in execution in performance of a task or obtaining an objective.</rdfs:comment>
     <rdfs:label xml:lang="en-US">Has Criterion</rdfs:label>
@@ -487,7 +487,6 @@
   </rdf:Property>
  
   <rdf:Property rdf:about="http://purl.org/ASN/schema/core/hasLevel">
-    <vann:usageNote xml:lang="en-US">Both RubricCriterion and CriterionCategory have an asn:sequence property to identify node order; however, json-ld encodings should use @list on the asn:hasCriterion and asn:hasLevel properties to maintain such sequencing.</vann:usageNote>
     <rdfs:label xml:lang="en-US">Has Level</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/RubricCriterion"/>
