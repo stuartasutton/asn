@@ -16,11 +16,13 @@
 <!-- ====================================================== -->    
 
   <rdf:Property rdf:about="http://purl.org/ASN/schema/ap/">
-    <dct:title xml:lang="en-US">The Achievement Standards Network Application Profile</dct:title>
+    <dct:title xml:lang="en-US">The Achievement Standards Network Application Profile (ASN-AP)</dct:title>
     <dct:description xml:lang="en-US">The Achievement Standards Network Application Profile (ASN-AP) provides URIs and definitions for all of the terms used in ASN metadata instances including properties from the ASN namespace as well as properties borrowed from other namespaces such as those of the Dublin Core Metadata Initiatve (DCMI), Simple Knowledge Organization System (SKOS), Creative Commons and Schema.org.</dct:description>
-    <dct:publisher xml:lang="en-US">University of Washington</dct:publisher>
-    <dct:contributor xml:lang="en-US">D2L</dct:contributor>
+    <dct:publisher xml:lang="en-US">Information School of the University of Washington (Seattle)</dct:publisher>
+    <dct:contributor xml:lang="en-US">Desire2Learn (D2L)</dct:contributor>
     <dct:language xml:lang="en-US">English</dct:language>
+    <dct:rights>https://creativecommons.org/licenses/by/4.0/</dct:rights>
+    <dct:rightsHolder xml:lang="en-US">University of Washington, Seattle</dct:rightsHolder>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-28</dct:issued>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-02</dct:modified>
   </rdf:Property>

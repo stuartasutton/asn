@@ -7,7 +7,7 @@
                 {"en-US": "Informnation School of the University of Washington (Seattle)"},
                 {"en-US": "JES & Co"}
             ],
-            "dcterms:rightsHolder": {"en-US": "University of Washington"},
+            "dcterms:rightsHolder": {"en-US": "University of Washington, Seattle"},
             "dcterms:rights": "https://creativecommons.org/licenses/by/4.0/",
             "dc:contributor": {"en-US": "Desire2Learn (D2L)"},
             "dc:publisher": {"en-US": "Informnation School of the University of Washington (Seattle)"},
