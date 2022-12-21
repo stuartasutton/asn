@@ -376,7 +376,7 @@
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/StandardDocument"/>
     <rdfs:label xml:lang="en-US">Date Copyrighted</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-    <rdfs:range rdf:resource="http://purl.org/dc/terms/W3CDTF"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </rdf:Property>
   
   <rdf:Property rdf:about="http://purl.org/ASN/schema/core/derivedFrom">
@@ -429,7 +429,7 @@
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/StandardDocument"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:label xml:lang="en-US">Export Version</rdfs:label>
-    <rdfs:comment xml:lang="en-US">The URI of the export version of the standards file.</rdfs:comment>
+    <rdfs:comment xml:lang="en-US">The export version of the standards file.</rdfs:comment>
   </rdf:Property>  
   
   <rdf:Property rdf:about="http://purl.org/ASN/schema/core/hasChild">
@@ -443,7 +443,7 @@
 
   <rdf:Property rdf:about="http://purl.org/ASN/schema/core/hasCriterion">
     <rdfs:range rdf:resource="http://purl.org/ASN/schema/core/RubricCriterion"/>
-    <rdfs:comment xml:lang="en-US">RubricCriterion referenced by the Rubric that defines a criterion to be met to demonstrate quality in execution in performance of a task or obtaining an objective.</rdfs:comment>
+    <rdfs:comment xml:lang="en-US">Rubric Criterion referenced by the Rubric that defines a criterion to be met to demonstrate quality in execution in performance of a task or obtaining an objective.</rdfs:comment>
     <rdfs:label xml:lang="en-US">Has Criterion</rdfs:label>
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/Rubric"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
@@ -464,7 +464,7 @@
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/RubricCriterion"/>
     <owl:equivalentProperty rdf:resource="https://ceds.ed.gov/CEDSElementDetails.aspx?TermId=14443"/>
     <rdfs:range rdf:resource="http://purl.org/ASN/schema/core/CriterionLevel"/>
-    <rdfs:comment xml:lang="en-US">Resource description of a level of performance based on a RubricCriterion.</rdfs:comment>
+    <rdfs:comment xml:lang="en-US">Resource description of a level of performance based on a Rubric Criterion.</rdfs:comment>
   </rdf:Property>
   
   <rdf:Property rdf:about="http://purl.org/dc/terms/hasPart">
@@ -589,7 +589,7 @@
   </rdf:Property>
   
   <rdf:Property rdf:about="http://purl.org/ASN/schema/core/levelFor">
-    <rdfs:comment xml:lang="en-US">Reference to the asn:RubricCriterion to which the asn:CriterionLevel being described belongs.</rdfs:comment>
+    <rdfs:comment xml:lang="en-US">Reference to the asn:Rubric Criterion to which the asn:Criterion Level being described belongs.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
     <rdfs:label xml:lang="en-US">Level For</rdfs:label>
     <rdfs:range rdf:resource="http://purl.org/ASN/schema/core/RubricCriterion"/>
@@ -659,7 +659,7 @@
 
   <rdf:Property rdf:about="http://purl.org/dc/terms/modified">
     <rdfs:label xml:lang="en-US">Date Modified</rdfs:label>
-    <rdfs:range rdf:resource="http://purl.org/dc/terms/W3CDTF"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     <rdfs:comment xml:lang="en-US">Date on which the resource was changed.</rdfs:comment>
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/LearningResource"/>
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/RightsAndAttribution"/>
@@ -667,6 +667,14 @@
     <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
   </rdf:Property>
 
+  <rdf:Property rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+    <rdfs:label xml:lang="en-US">Narrower</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Relates a concept to a concept that is more specific in meaning.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Property>
+  
   <rdf:Property rdf:about="http://purl.org/ASN/schema/core/narrowAlignment">
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/Statement"/>
@@ -684,14 +692,6 @@
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
   </rdf:Property>
   
-  <rdf:Property rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
-    <rdfs:label xml:lang="en-US">Narrower</rdfs:label>
-    <rdfs:comment xml:lang="en-US">Relates a concept to a concept that is more specific in meaning.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
-    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Property>
-
   <rdf:Property rdf:about="http://www.w3.org/2004/02/skos/core#note">
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/Statement"/>
     <rdfs:label xml:lang="en-US">Note</rdfs:label>
@@ -703,7 +703,7 @@
 
   <rdf:Property rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
     <rdfs:label xml:lang="en-US">Preferred Label</rdfs:label>
-    <rdfs:comment xml:lang="en-US">Preferred LabelThe preferred lexical label for a resource, in a given language."@en</rdfs:comment>
+    <rdfs:comment xml:lang="en-US">The preferred lexical label for a resource, in a given language."@en</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
@@ -739,7 +739,7 @@
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
     <schema:domainIncludes rdf:resource="http://purl.org/ASN/schema/core/Statement"/>
     <rdfs:range rdf:resource="http://purl.org/ASN/schema/core/ProficiencyScale"/>
-    <dcterms:description xml:lang="en">The value of asn:proficiencyLevel should be a concept IRI of a member of the class asn:ProficiencyScale.</dcterms:description>
+    <dcterms:description xml:lang="en">The value of proficiencyLevel should be a concept IRI of a member of the class ProficiencyScale.</dcterms:description>
     <rdfs:label xml:lang="en-US">Proficiency Level</rdfs:label>
     <rdfs:comment xml:lang="en">The expected performance level of a learner or professional in relationship to a competency.</rdfs:comment>
   </rdf:Property>
@@ -774,7 +774,7 @@
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/StandardDocument"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-    <rdfs:range rdf:resource="http://purl.org/dc/terms/W3CDTF"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     <rdfs:comment xml:lang="en-US">The date the standards document was added to the repository.</rdfs:comment>
   </rdf:Property>
   
@@ -783,7 +783,7 @@
     <rdfs:label xml:lang="en-US">Rights</rdfs:label>
     <rdfs:comment xml:lang="en-US">Information about rights held in and over the resource.</rdfs:comment>
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/RightsAndAttribution"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/StandardDocument"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
   </rdf:Property>
@@ -813,7 +813,7 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
     <owl:equivalentProperty rdf:resource="https://ceds.ed.gov/CEDSElementDetails.aspx?TermId=14447"/>
-    <rdfs:comment xml:lang="en-US">Points to be awarded for achieving this level for a RubricCriterion.</rdfs:comment>
+    <rdfs:comment xml:lang="en-US">Points to be awarded for achieving this level for a Rubric Criterion.</rdfs:comment>
   </rdf:Property>
 
   <rdf:Property rdf:about="http://purl.org/ASN/schema/core/sequence">

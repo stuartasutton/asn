@@ -418,7 +418,7 @@
             "rdfs:domain": "asn:StandardDocument",
             "rdfs:isDefinedBy": "dcterms:",
             "rdfs:label": {"en-US": "Date Copyrighted"},
-            "rdfs:range": "dcterms:W3CDTF"
+            "rdfs:range": "rdfs:Literal"
         },
         {
             "@id": "asn:derivedFrom",
@@ -477,7 +477,7 @@
         {
             "@id": "asn:exportVersion",
             "@type": "rdf:Property",
-            "rdfs:comment": {"en-US": "The URI of the export version of the standards file."},
+            "rdfs:comment": {"en-US": "The export version of the standards file."},
             "rdfs:domain": "asn:StandardDocument",
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Export Version"},
@@ -487,10 +487,10 @@
             "@id": "asn:hasChild",
             "@type": "rdfs:Property",
             "rdfs:comment": {"en-US": "The resource being described is higher in some arbitrary hierarchy than the resource being pointed to by this Relation element."},
-            "rdfs:domain": ["asn:CompetencyFramework","asn:Statement"],
+            "rdfs:domain": ["Competency Framework","asn:Statement"],
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Has Child"},
-            "rdfs:range": "asn:Concept"
+            "rdfs:range": "asn:Statement"
         },
         {
             "@id": "asn:hasCriterion",
@@ -538,13 +538,13 @@
             "rdfs:domain": "asn:ProgressionModel",
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Has Progression Level"},
-            "rdfs:range": "skos:Concept"
+            "rdfs:range": "asn:ProgressionLevel"
         },
         {
             "@id": "asn:hasProgressionModel",
             "@type": "rdfs:Property",
             "rdfs:comment": {"en-US": "Reference to a progression model used."},
-            "rdfs:domain": "rdfs:Resource",
+            "rdfs:domain": ["rdfs:Resource", "asn:Rubric"],
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Has Progression Model"},
             "rdfs:range": "asn:ProgressionModel"
@@ -565,7 +565,7 @@
             "rdfs:comment": {"en-US": "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."},
             "rdfs:domain": "skos:ConceptScheme",
             "rdfs:range": "skos:Concept",
-            "rdfs:isDefinedBy": "asn:"
+            "rdfs:isDefinedBy": "skos:"
         },
         {
             "@id": "dcterms:hasVersion",
@@ -746,13 +746,13 @@
             ],
             "rdfs:isDefinedBy": "dcterms:",
             "rdfs:label": {"en-US": "Date Modified"},
-            "rdfs:range": "xsd:dateTime",
+            "rdfs:range": "http://www.w3.org/2000/01/rdf-schema#Literal",
             "rdfs:subPropertyOf": "dcterms:date"
         },
         {
             "@id": "skos:narrower",
             "@type": "rdf:Property",
-            "rdfs:label": {"en-US": "Has Narrower"},
+            "rdfs:label": {"en-US": "Narrower"},
             "rdfs:comment": {"en-US": "Relates a concept to a concept that is more specific in meaning."},
             "rdfs:domain": "skos:Concept",
             "rdfs:range": "skos:Concept",
@@ -830,7 +830,7 @@
         {
             "@id": "asn:proficiencyLevel",
             "@type": "rdf:Property",
-            "dcterms:description": {"en-US": "The value of asn:proficiencyLevel should be a concept IRI of a member of the class asn:ProficiencyScale."},
+            "dcterms:description": {"en-US": "The value of proficiencyLevel should be a concept IRI of a member of the class ProficiencyScale."},
             "schema:domainIncludes": [
                 "asn:LearningResource",
                 "asn:Statement"
@@ -875,7 +875,7 @@
             "rdfs:domain": "asn:StandardDocument",
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Repository Date"},
-            "rdfs:range": "xsd:date",
+            "rdfs:range": "rdfs:Literal",
             "rdfs:subPropertyOf": "dcterms:date"
         },
         {
@@ -917,7 +917,7 @@
         {
             "@id": "asn:score",
             "@type": "rdfs:Property",
-            "rdfs:comment": {"en-US": "Points to be awarded for achieving this level for a RubricCriterion."},
+            "rdfs:comment": {"en-US": "Points to be awarded for achieving this level for a Rubric Criterion."},
             "rdfs:domain": "asn:CriterionLevel",
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Criterion Level Score"},
