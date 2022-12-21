@@ -2,7 +2,7 @@
 
 ## Schema Files
 
-ASN namespace files defining terms (properties and classes)--four (RDF and JSONLD) schema files and a JSONLD @context file:
+ASN namespace files defining terms (properties and classes)--four (RDF and JSONLD) schema files and a JSONLD @context file. **For general use, the asnProfile.rdf or the asnProfile.jsonld are preferred because that contain all terms used in ASN descriptions. The asnTerms.rdf and asnTerms.jsonld contain ONLY the terms defined in the ASN namaespace.**
 
 1. **Schema File 1 (asnTerms.jsonld):** A JSONLD version of the namespace file defining ASN terms ONLY; 
 
@@ -14,7 +14,7 @@ ASN namespace files defining terms (properties and classes)--four (RDF and JSONL
 
 1. **Context File (asnContext.json):** A context file for referencing from ASN data instances using JSON-LD that includes ALL terms from both the ASN namespace and profile schemas.
 
-*Note 1: In the ASN namespace, the competency framework class is called StandardsDocument and a competency is called a Statement.
+<span style="color: red">*Note 1: In the ASN namespace, the competency framework class is called StandardsDocument and a competency is called a Statement.</span>
 
 *Note 2: Ignore any other files in the repo.
 
