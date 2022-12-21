@@ -2,7 +2,9 @@
 
 ## Schema Files
 
-ASN namespace files defining terms (properties and classes)--four (RDF and JSONLD) schema files and a JSONLD @context file. **For general use, the asnProfile.rdf or the asnProfile.jsonld are preferred because they contain all terms used in ASN descriptions. The asnTerms.rdf and asnTerms.jsonld contain ONLY the terms defined in the ASN namaespace.**
+ASN namespace files defining terms (properties and classes)--four (RDF and JSONLD) schema files and a JSONLD @context file. 
+
+**For general use, the asnProfile.rdf or the asnProfile.jsonld are preferred because they contain all terms used in ASN descriptions. The asnTerms.rdf and asnTerms.jsonld contain ONLY the terms defined in the ASN namaespace.**
 
 1. **Schema File 1 (asnTerms.jsonld):** A JSONLD version of the namespace file defining ASN terms ONLY; 
 
