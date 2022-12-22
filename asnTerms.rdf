@@ -40,14 +40,14 @@
     <rdfs:comment xml:lang="en-US">A Competency Map can be viewed as an identified graph that aggregates two or more competency statements (asn:statement) and the relationships asserted among them.</rdfs:comment>
     <rdfs:label xml:lang="en-US">CompetencyMap</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
-    <vann:usageNote>A Competency Map is a profile that borrows statements (asn:Statement) from two or more standard documents (asn:StandardDocument).A Competency Map may or may not define new statements in its own namespace.</vann:usageNote>
+    <vann:usageNote>A Competency Map is a profile that borrows statements (Statement) from two or more standard documents (StandardDocument).A Competency Map may or may not define new statements in its own namespace.</vann:usageNote>
   </rdfs:Class>
 
   <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/CorrelationResource">
     <rdfs:comment xml:lang="en-US">A resource that describes the mapping between a learning resource and a node in a learning outcomes framework.</rdfs:comment>
     <rdfs:label xml:lang="en-US">Correlation Resource</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
-    <vann:usageNote>The CorrelationResource is an entity intended to provide a rich description of a mapping (correlation) between a LearningResource and a Statement when a binary assertion of a relationship is insufficient.</vann:usageNote>
+    <vann:usageNote>The Correlation Resource is an entity intended to provide a rich description of a mapping (correlation) between a Learning Resource and a Statement when a binary assertion of a relationship is insufficient.</vann:usageNote>
   </rdfs:Class>
   
   <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/CriterionCategory">
@@ -79,7 +79,7 @@
   <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/EducationalFramework">
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
     <rdfs:label xml:lang="en-US">Educational Framework</rdfs:label>
-    <vann:usageNote xml:lang="en-US">Similar to the class skos:ConceptScheme with an intended focus on education and training. Examples of educational frameworks include, but are not limited to, frameworks enumerating competencies, text complexity, proficiency scales, assessment rubrics of various forms, and specialized subject vocabularies.</vann:usageNote>
+    <vann:usageNote xml:lang="en-US">Similar to the class ConceptScheme with an intended focus on education and training. Examples of educational frameworks include, but are not limited to, frameworks enumerating competencies, text complexity, proficiency scales, assessment rubrics of various forms, and specialized subject vocabularies.</vann:usageNote>
     <rdfs:comment xml:lang="en-US">The class of all structured sets of conceptual resources intentionally designed for use as value vocabulary terms in education and training contexts.</rdfs:comment>
   </rdfs:Class>
   
@@ -136,13 +136,13 @@
   <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/StandardDocument">
     <rdfs:label xml:lang="en-US">Standard Document</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
-    <rdfs:comment xml:lang="en-US">A collection of statements representing an expectation of what students should know, value, and be able to do at a target age or age range.</rdfs:comment>
+    <rdfs:comment xml:lang="en-US">A collection of statements representing an expectation of what students or workers should know, value, and be able to do.</rdfs:comment>
   </rdfs:Class>
   
   <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/Statement">
     <rdfs:label xml:lang="en-US">Statement</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ASN/schema/core/"/>
-    <rdfs:comment xml:lang="en-US">An assertion representing an expectation of what students should know, value, and be able to do at a target age or age range.</rdfs:comment>
+    <rdfs:comment xml:lang="en-US">An assertion representing an expectation of what students or workers should know, value, and be able to do.</rdfs:comment>
   </rdfs:Class>
   
   <rdfs:Class rdf:about="http://purl.org/ASN/schema/core/StatusScheme">

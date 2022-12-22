@@ -132,14 +132,14 @@
         {
             "@id": "asn:StandardDocument",
             "@type": "rdfs:Class",
-            "rdfs:comment": {"en-US": "A collection of statements representing an expectation of what students should know, value, and be able to do at a target age or age range."},
+            "rdfs:comment": {"en-US": "A collection of statements representing an expectation of what students or workers should know, value, and be able to do."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Standard Document"}
         },
         {
             "@id": "asn:Statement",
             "@type": "rdfs:Class",
-            "rdfs:comment": {"en-US": "An assertion representing an expectation of what students should know, value, and be able to do at a target age or age range."},
+            "rdfs:comment": {"en-US": "An assertion representing an expectation of what students or workers should know, value, and be able to do."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Statement"}
         },
