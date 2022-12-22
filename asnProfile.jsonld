@@ -28,8 +28,8 @@
         {
             "@id": "asn:CompetencyMap",
             "@type": "rdfs:Class",
-            "vann:usageNote": {"en-US": "A Competency Map is a profile that borrows statements (asn:Statement) from two or more standard documents (asn:StandardDocument). A Competency Map may or may not define new statements in its own namespace."},
-            "rdfs:comment": {"en-US": "A Competency Map can be viewed as an identified graph that aggregates two or more competency statements (asn:Statement) and the relationships asserted among them."},
+            "vann:usageNote": {"en-US": "A Competency Map is a profile that borrows statements (Statement) from two or more standard documents (StandardDocument). A Competency Map may or may not define new statements in its own namespace."},
+            "rdfs:comment": {"en-US": "A Competency Map can be viewed as an identified graph that aggregates two or more competency statements (Statement) and the relationships asserted among them."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Competency Map"}
         },
@@ -74,7 +74,7 @@
         {
             "@id": "asn:EducationalFramework",
             "@type": "rdfs:Class",
-            "vann:usageNote": {"en-US": "Similar to the class skos:ConceptScheme with an intended focus on education and training. Examples of educational frameworks include, but are not limited to, frameworks enumerating competencies, text complexity, proficiency scales, assessment rubrics of various forms, and specialized subject vocabularies."},
+            "vann:usageNote": {"en-US": "Similar to the class ConceptScheme with an intended focus on education and training. Examples of educational frameworks include, but are not limited to, frameworks enumerating competencies, text complexity, proficiency scales, assessment rubrics of various forms, and specialized subject vocabularies."},
             "rdfs:comment": {"en-US": "The class of all structured sets of conceptual resources intentionally designed for use as value vocabulary terms in education and training contexts."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Educational Framework"}
@@ -140,14 +140,14 @@
         {
             "@id": "asn:StandardDocument",
             "@type": "rdfs:Class",
-            "rdfs:comment": {"en-US": "A collection of statements representing an expectation of what students should know, value, and be able to do at a target age or age range."},
+            "rdfs:comment": {"en-US": "A collection of statements representing an expectation of what students or workers should know, value, and be able to do."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Standard Document"}
         },
         {
             "@id": "asn:Statement",
             "@type": "rdfs:Class",
-            "rdfs:comment": {"en-US": "An assertion representing an expectation of what students should know, value, and be able to do at a target age or age range."},
+            "rdfs:comment": {"en-US": "An assertion representing an expectation of what students or workers should know, value, and be able to do."},
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Statement"}
         },
@@ -318,7 +318,7 @@
             "@type": "rdf:Property",
             "rdfs:label": {"en-US": "Broader"},
             "rdfs:comment": {"en-US": "Relates a concept to a concept that is more general in meaning."},
-            "vann:usageNote": {"en-US": "Broader concepts are typically rendered as parents in a concept hierarchy (tree)."},
+            "dcterms:description": {"en-US": "Broader concepts are typically rendered as parents in a concept hierarchy (tree)."},
             "skos:scopeNote": "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources." ,
             "rdfs:domain": "skos:Concept",
             "rdfs:range": "skos:Concept",
@@ -338,7 +338,7 @@
         {
             "@id": "asn:complexityLevel",
             "@type": "rdf:Property",
-            "dcterms:description": {"en-US": "The value of asn:complexityLevel should be a concept IRI of a member of the class asn:ProficiencyScale."},
+            "dcterms:description": {"en-US": "The value of complexityLevel should be a concept IRI of a member of the class ProficiencyScale."},
             "rdfs:comment": {"en-US": "The expected performance level of a learner or professional as defined by a competency."},
             "rdfs:domain": "asn:Statement",
             "rdfs:isDefinedBy": "asn:",
@@ -487,7 +487,7 @@
             "@id": "asn:hasChild",
             "@type": "rdfs:Property",
             "rdfs:comment": {"en-US": "The resource being described is higher in some arbitrary hierarchy than the resource being pointed to by this Relation element."},
-            "rdfs:domain": ["Competency Framework","asn:Statement"],
+            "rdfs:domain": ["asn:CompetencyFramework","asn:Statement"],
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Has Child"},
             "rdfs:range": "asn:Statement"
@@ -495,7 +495,7 @@
         {
             "@id": "asn:hasCriterion",
             "@type": "rdfs:Property",
-            "rdfs:comment": {"en-US": "Rubric Criterion referenced by the Rubric that defining criterion to be met to demonstrate quality in execution in performance of a task or obtaining an objective."},
+            "rdfs:comment": {"en-US": "Rubric Criterion referenced by the Rubric that defines a criterion to be met to demonstrate quality execution in performance of a task or obtaining an objective."},
             "rdfs:domain": "asn:Rubric",
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Has Criterion"},
@@ -504,7 +504,7 @@
         {
             "@id": "asn:hasCriterionCategory",
             "@type": "rdfs:Property",
-            "skos:note": {"en-US": "Large rubrics are occasionally divided into logical sections or categories that need to be identified and described."},
+            "vann:usageNote": {"en-US": "Large rubrics are occasionally divided into logical sections or categories that need to be identified and described."},
             "rdfs:comment": {"en-US": "Resource referenced by the Rubric that defines categories for clustering logical sets of Rubric Criterion."},
             "rdfs:domain": "asn:Rubric",
             "rdfs:isDefinedBy":  "asn:",
@@ -524,7 +524,7 @@
         {
             "@id": "dcterms:hasPart",
             "@type": "rdf:Property",
-            "dcterms:description": {"en-US": "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."},
+            "dcterms:description": {"en-US": "This property is intended to be used with non-literal values. This property is an inverse property of isPartOf."},
             "rdfs:comment": {"en-US": "A related resource that is included either physically or logically in the described resource."},
             "rdfs:domain": "rdfs:Resource",
             "rdfs:isDefinedBy": "dcterms:",
@@ -607,7 +607,7 @@
         {
             "@id": "asn:isChildOf",
             "@type": "rdf:Property",
-            "rdfs:comment": {"en-US": "The statement being described is lower in some arbitrary hierarchy than the statement identified in the asn:isChildOf property. The statement identified is a parent of the statement being described."},
+            "rdfs:comment": {"en-US": "The statement being described is lower in some arbitrary hierarchy than the statement identified in the isChildOf property. The statement identified is a parent of the statement being described."},
             "rdfs:domain": "asn:Statement",
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Is Child Of"},
@@ -662,7 +662,7 @@
         {
             "@id": "asn:levelFor",
             "@type": "rdfs:Property",
-            "rdfs:comment": {"en-US": "Reference to the Rubric Criterion to which the asn:Criterion Level being described belongs."},
+            "rdfs:comment": {"en-US": "Reference to the Rubric Criterion to which the Criterion Level being described belongs."},
             "rdfs:domain": "asn:CriterionLevel",
             "rdfs:isDefinedBy": "asn:",
             "rdfs:label": {"en-US": "Level For"},
