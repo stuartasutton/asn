@@ -97,14 +97,14 @@
             "@id": "asn:ProgressionLevel",
             "@type": "rdfs:Class",
             "rdfs:label": {"en-US": "Progression Level"},
-            "rdfs:comment": {"en-US": "Identifiable point along a developmental progression of competence, achievement or temporal position."},
+            "rdfs:comment": {"en-US": "Is an dentifiable point along a developmental progression of competence, achievement or temporal position."},
             "rdfs:isDefinedBy": "asn:"
         },
         {
             "@id": "asn:ProgressionModel",
             "@type": "rdfs:Class",
             "rdfs:label": {"en-US": "Progression Model"},
-            "rdfs:comment": {"en-US": "Model of identifiable points along a developmental progression including increasing levels of competence, achievement or temporal position (e.g., \"Second Quarter\")."},
+            "rdfs:comment": {"en-US": "Is a set of identifiable points along a developmental progression including increasing levels of competence, achievement or temporal position (e.g., \"Beginner\", \"Second Quarter\")."},
             "rdfs:isDefinedBy": "asn:"
         },
         {
