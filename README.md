@@ -4,19 +4,20 @@
 
 ASN namespace files defining terms (properties and classes)--four (RDF and JSONLD) schema files and a JSONLD @context file. 
 
-**For general use, the asnProfile.rdf or the asnProfile.jsonld are preferred because they contain all terms used in ASN descriptions. The asnTerms.rdf and asnTerms.jsonld contain ONLY the terms defined in the ASN namespace.**
+**For general use, the asnProfile.rdf or the asnProfile.jsonld are preferred because they contain all terms used in ASN descriptions. The asnTerms.rdf and asnTerms.jsonld contain ONLY the terms defined in the ASN namespace and are inadequate for full ASN StandardDocument and Statement descriptions.**
 
-1. **Schema File 1 (asnTerms.jsonld):** A JSONLD version of the namespace file defining ASN terms ONLY; 
+1. ***ASN Profile*** (All ASN Terms + All Borrowed Terms from Other Namespaces)
+   - **asnProfile.rdf:** An RDF version of the profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Dublin Core Terms); and
+   - **asnProfile.jsonld:** A JSONLD version of the profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Terms).
+   
+1. ***ASN Namespace*** (ASN Terms <u>Only</u>)
+   - **asnTerms.rdf:** An RDF version of the ASN namespace file defining ASN terms only; and
+   - **asnTerms.jsonld:** A JSONLD version of the ASN namespace file defining ASN terms only. 
 
-1. **Schema file 2 (asnProfile.jsonld):** A JSONLD version of the profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Terms).
+1. ***JSON-LD Context File*** (Context for All terms Used in the asnProfile.jsonld and asnTerms.jsonld)
+   - **asnContext.json:** A context file for referencing from ASN data instances using JSON-LD that includes ALL terms from both the ASN namespace and profile schemas.
 
-1. **Schema File 3 (asnTerms.rdf):** An RDF version of the namespace file defining ASN terms ONLY; 
-
-1. **Schema file 4 (asnProfile.rdf):** An RDF version of the profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Terms).
-
-1. **Context File (asnContext.json):** A context file for referencing from ASN data instances using JSON-LD that includes ALL terms from both the ASN namespace and profile schemas.
-
-*Note: In the ASN namespace, the competency framework class is called StandardDocument and a competency is called Statement.
+**Note:** In the ASN namespace, the competency framework class is called StandardDocument and a competency is called Statement.
 
 ## Concept Scheme Files
 
