@@ -6,7 +6,7 @@
 
 1. ***ASN Profile*** (All ASN Terms + All Borrowed Terms from Other Namespaces)
    - **asnProfile.rdf:** An RDF version of the profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Dublin Core Terms); and
-   - **asnProfile.jsonld:** A JSONLD version of the profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Terms).
+   - **asnProfile.jsonld:** A JSONLD version of the profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Dublin Core Terms).
    
 1. ***ASN Namespace*** (ASN Terms <u>Only</u>)
    - **asnTerms.rdf:** An RDF version of the ASN namespace file defining ASN terms only; and
