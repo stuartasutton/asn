@@ -4,6 +4,7 @@
    xmlns:dcterms="http://purl.org/dc/terms/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:loc="http://www.loc.gov/loc.terms/relators/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:schema="http://schema.org/"
@@ -247,7 +248,7 @@
     <dcterms:description>In ASN, the author property should be used only where individual people have been identified as authors.</dcterms:description>
     <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
     <rdfs:domain rdf:resource="http://purl.org/ASN/schema/core/StandardDocument"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <rdfs:isDefinedBy rdf:resource="http://id.loc.gov/vocabulary/relators/"/>
   </rdf:Property>
 
   <rdf:Property rdf:about="http://purl.org/ASN/schema/core/authorityStatus">
