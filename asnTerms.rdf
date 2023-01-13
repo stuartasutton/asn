@@ -20,9 +20,9 @@
 <!-- the asnProfile.rdf document.                           --> 
 <!-- ====================================================== -->    
 
-  <rdf:Property rdf:about="http://purl.org/ASN/schema/ap/">
-    <dc:title xml:lang="en-US">The Achievement Standards Network Application Profile (ASN-AP)</dc:title>
-    <dcterms:description xml:lang="en-US">The Achievement Standards Network Application Profile (ASN-AP) provides URIs and definitions for all of the terms used in ASN metadata instances including properties from the ASN namespace as well as properties borrowed from other namespaces such as those of the Dublin Core Metadata Initiatve (DCMI), Simple Knowledge Organization System (SKOS), Creative Commons and Schema.org.</dcterms:description>
+  <rdf:Property rdf:about="http://purl.org/ASN/schema/core/asnTerms.rdf">
+    <dc:title xml:lang="en-US">The Achievement Standards Network Core Terms</dc:title>
+    <dcterms:description xml:lang="en-US">Achievement Standards Network Core Terms provides URIs and definitions for all of the terms defined in the ASN namespace.</dcterms:description>
     <dcterms:publisher xml:lang="en-US">Information School of the University of Washington (Seattle)</dcterms:publisher>
     <dcterms:contributor xml:lang="en-US">Desire2Learn (D2L)</dcterms:contributor>
     <dcterms:language xml:lang="en-US">English</dcterms:language>

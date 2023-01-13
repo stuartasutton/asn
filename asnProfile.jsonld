@@ -2,7 +2,7 @@
 	"@context": "http://achievementstandards.org/ASN/schema/core/asnContext.jsonld",
 	"@graph": [
         {
-            "@id": "http://achievementstandards.org/ASN/schema/core/asnProfile.jsonld",
+            "@id": "http://purl.org/ASN/schema/core/asnProfile.jsonld",
             "dc:creator": [
                 {"en-US": "Informnation School of the University of Washington (Seattle)"},
                 {"en-US": "JES & Co"}

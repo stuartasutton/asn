@@ -2,18 +2,18 @@
 	"@context": "http://achievementstandards.org/ASN/schema/core/asnContext.jsonld",
 	"@graph": [
         {
-            "@id": "http://achievementstandards.org/ASN/schema/core/asnProfile.jsonld",
+            "@id": "http://purl.org/ASN/schema/core/asnTerms.jsonld",
             "dc:creator": [
-                {"en-US": "Informnation School of the University of Washington (Seattle)"},
+                {"en-US": "Information School of the University of Washington (Seattle)"},
                 {"en-US": "JES & Co"}
             ],
             "dcterms:rightsHolder": {"en-US": "University of Washington, Seattle"},
             "dcterms:rights": "https://creativecommons.org/licenses/by/4.0/",
             "dc:contributor": {"en-US": "Desire2Learn (D2L)"},
             "dc:publisher": {"en-US": "Informnation School of the University of Washington (Seattle)"},
-            "dct:description": {"en-US": "The Achievement Standards Network Application Profile (ASN-AP) provides URIs and definitions for all of the terms used in ASN metadata instances including properties from the ASN namespace as well as properties borrowed from other namespaces such as those of the Dublin Core Metadata Initiatve (DCMI), Simple Knowledge Organization System (SKOS), Creative Commons and Schema.org."},
+            "dct:description": {"en-US": "Achievement Standards Network Core Terms provides URIs and definitions for all of the terms defined in the ASN namespace."},
             "dc:language": {"en-US": "English"},
-            "dc:title": {"en-US": "The Achievement Standards Network Application Profile (ASN-AP)"},
+            "dc:title": {"en-US": "The Achievement Standards Network Core Terms"},
             "dcterms:issued": "2020-11-28",
             "dcterms:modified": "2023-01-02"
         },
