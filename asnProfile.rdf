@@ -25,7 +25,7 @@
     <dcterms:rights>https://creativecommons.org/licenses/by/4.0/</dcterms:rights>
     <dcterms:rightsHolder xml:lang="en-US">University of Washington, Seattle</dcterms:rightsHolder>
     <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-28</dcterms:issued>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-02</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-13</dcterms:modified>
   </rdf:Property>
   
 <!-- ====================================================== -->
