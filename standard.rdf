@@ -12,7 +12,7 @@
 >
 
 <!-- ====================================================== -->
-<!-- ASN APPLICATION PROFILE DESCRIPTION                    -->
+<!-- ASN TERM DESCRIPTIONS                                  -->
 <!--                                                        -->    
 <!-- This document defines properties in the ASN namespace  -->
 <!-- O N L Y. For this namespace plus properties from       -->
@@ -20,7 +20,7 @@
 <!-- the asnProfile.rdf document.                           --> 
 <!-- ====================================================== -->    
 
-  <rdf:Property rdf:about="http://purl.org/ASN/schema/core/asnTerms.rdf">
+  <rdf:Property rdf:about="http://purl.org/ASN/schema/core/">
     <dc:title xml:lang="en-US">The Achievement Standards Network Core Terms</dc:title>
     <dcterms:description xml:lang="en-US">Achievement Standards Network Core Terms provides URIs and definitions for all of the terms defined in the ASN namespace.</dcterms:description>
     <dcterms:publisher xml:lang="en-US">Information School of the University of Washington (Seattle)</dcterms:publisher>
