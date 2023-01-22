@@ -2,7 +2,7 @@
 	"@context": "http://achievementstandards.org/ASN/schema/core/asnContext.jsonld",
 	"@graph": [
         {
-            "@id": "http://purl.org/ASN/schema/jsonProfile/",
+            "@id": "http://achievementstandards.org/ASN/schema/core/profile.jsonld",
             "dc:creator": [
                 {"en-US": "Informnation School of the University of Washington (Seattle)"},
                 {"en-US": "JES & Co"}
@@ -15,7 +15,7 @@
             "dc:language": {"en-US": "English"},
             "dc:title": {"en-US": "The Achievement Standards Network Application Profile (ASN-AP)"},
             "dcterms:issued": "2020-11-28",
-            "dcterms:modified": "2023-01-13"
+            "dcterms:modified": "2023-01-20"
         },
         {
             "@id": "rdfs:Resource",
