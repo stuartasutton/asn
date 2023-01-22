@@ -5,15 +5,15 @@
 **For general use, the asnProfile.rdf or the asnProfile.jsonld are preferred because they contain all terms used in ASN descriptions. The asnTerms.rdf and asnTerms.jsonld contain ONLY the terms defined in the ASN namespace and are inadequate for full ASN StandardDocument and Statement descriptions.**
 
 1. ***ASN Profile*** (All ASN Terms + All Borrowed Terms from Other Namespaces)
-   - **asnProfile.rdf:** An RDF version of the profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Dublin Core Terms); and
-   - **asnProfile.jsonld:** A JSONLD version of the profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Dublin Core Terms).
+   - **profile.rdf:** An RDF version of the profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Dublin Core Terms); and
+   - **profile.jsonld:** A JSONLD version of the profile schema file including all of the ASN terms and all terms borrowed from other namespaces (e.g., Dublin Core 1.1 and Dublin Core Terms).
    
 1. ***ASN Namespace*** (ASN Terms <u>Only</u>)
-   - **asnTerms.rdf:** An RDF version of the ASN namespace file defining ASN terms only; and
-   - **asnTerms.jsonld:** A JSONLD version of the ASN namespace file defining ASN terms only. 
+   - **standard.rdf:** An RDF version of the ASN namespace file defining ASN terms only; and
+   - **standard.jsonld:** A JSONLD version of the ASN namespace file defining ASN terms only. 
 
-1. ***JSON-LD Context File*** (Context for All terms Used in the asnProfile.jsonld and asnTerms.jsonld)
-   - **asnContext.json:** A context file for referencing from ASN data instances using JSON-LD that includes ALL terms from both the ASN namespace and profile schemas.
+1. ***JSON-LD Context File*** (Context for All terms Used in profile.jsonld)
+   - **asnContext.json:** A context file for referencing from ASN data instances using JSON-LD that includes ALL terms from both the ASN namespace and borrowed (reused) terms.
 
 **Note:** In the ASN namespace, the competency framework class is called StandardDocument and a competency is called Statement.
 
