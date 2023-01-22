@@ -20,7 +20,7 @@
 <!-- the asnProfile.rdf document.                           --> 
 <!-- ====================================================== -->    
 
-  <rdf:Property rdf:about="http://purl.org/ASN/schema/core/">
+  <rdf:Property rdf:about="http://achievementstandards.org/ASN/schema/core/standard.rdf">
     <dc:title xml:lang="en-US">The Achievement Standards Network Core Terms</dc:title>
     <dcterms:description xml:lang="en-US">Achievement Standards Network Core Terms provides URIs and definitions for all of the terms defined in the ASN namespace.</dcterms:description>
     <dcterms:publisher xml:lang="en-US">Information School of the University of Washington (Seattle)</dcterms:publisher>
@@ -29,7 +29,7 @@
     <dcterms:rights>https://creativecommons.org/licenses/by/4.0/</dcterms:rights>
     <dcterms:rightsHolder xml:lang="en-US">University of Washington, Seattle</dcterms:rightsHolder>
     <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-28</dcterms:issued>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-13</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-20</dcterms:modified>
   </rdf:Property>
   
 <!-- ====================================================== -->
